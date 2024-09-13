@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: monospace; */
+    font-family: sans-serif;
+}
+
+/* ul {background-color: red;} */
+
+body {
+    /* background-color: green; */
+    padding: 1%;
+}
+
+nav {background-color: black;}
+
+.slide {
+    /* background-color: yellow; */
+    /* width: 300px; */
+    height: 100%;
+    display: none;
+    background-size: cover;
+}
+
+#slideshow {
+    /* background-color: cyan; */
+    position: relative;
+    /* why */
+    width: 100%;
+    /* overflow: hidden; */
+    /* display: block; */
+    height: 600px;
+    mix-blend-mode: difference;
+}
+
+.displaySlide {
+    display: block;
+    /* animation-name: fade; */
+    /* animation-duration: 1.5s; */
+}
+
+#slideshow button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* @keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+} */
+
+.navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+.navigation li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: black;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+li:hover ul.dropdown {
+    display: block;
+}
+
+h1 {
+    font-size: 3em;
+}
