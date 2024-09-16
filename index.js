@@ -12,7 +12,7 @@ fetch('./content/home/home_copy.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
-            textTarget.insertAdjacentHTML('beforeend', `<h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br>`);
+            textTarget.insertAdjacentHTML('beforeend', `<div class="textblock"><h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br></div>`);
         });
     });
 
@@ -61,3 +61,36 @@ function nextSlide(){
     showSlide(slideIndex);
     intervalId = setInterval(nextSlide, 5000);
 }
+
+
+const hamMenu = document.querySelector('.ham-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+})
+
+
+const resources = document.querySelector('.resources');
+const resourcesMenu = document.querySelector('.resources-menu')
+resources.addEventListener('click', () => {
+    resourcesMenu.classList.toggle('active');
+})
+
+const people = document.querySelector('.people');
+const peopleMenu = document.querySelector('.people-menu')
+people.addEventListener('click', () => {
+    peopleMenu.classList.toggle('active');
+})
+
+const curriculum = document.querySelector('.curriculum');
+const cirriculumMenu = document.querySelector('.curriculum-menu')
+curriculum.addEventListener('click', () => {
+    cirriculumMenu.classList.toggle('active');
+})
+
+const is = document.querySelector('.is');
+const isMenu = document.querySelector('.is-menu')
+is.addEventListener('click', () => {
+    isMenu.classList.toggle('active');
+})
