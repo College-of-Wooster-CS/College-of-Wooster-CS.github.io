@@ -7,81 +7,51 @@
     text-decoration: none;
 }
 
+/* html {
+    height: 100%;
+} */
+
 body {
     background-color: rgb(237, 235, 228);
-    padding: 1%;
+    padding: 40px 40px 0 40px;
+    /* height: 100%; */
 }
 
 nav {
     /* background-color: tan; */
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.slide {
-    height: 100%;
-    display: none;
-    background-size: cover;
-}
-
-#slideshow {
-    position: relative;
-    width: 100%;
-    display: block;
-    height: 600px;
-}
-
-.displaySlide {
-    display: block;
-    color: white;
-}
-
-#slideshow button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-}
-
-.previous {
-    left: 0;
-}
-
-.next {
-    right: 0;
+    justify-content: space-between;
+    /* margin-bottom: 40px; */
 }
 
 .navigation {
     width: 70%;
     /* background-color: magenta; */
     font-size: 2rem;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.navigation li {
-    display: inline-block;
-    width: 20%;
-    /* background-color: cyan; */
-    position: relative;
 }
 
 .home {
     /* background-color: green; */
     width: 25%;
+    margin: 0;
 }
 
 nav img {
     width: 100%;
     /* background-color: cyan; */
+}
+
+.navigation li {
+    display: inline-block;
+    /* display: inline-block; */
+    width: 20%;
+    height: 100%;
+    /* background-color: cyan; */
+    position: relative;
 }
 
 .navigation li a {
@@ -111,26 +81,6 @@ nav img {
 
 li:hover ul.dropdown {
     display: block;
-}
-
-h1 {
-    font-size: 6em;
-    text-align: center;
-    margin-bottom: 1%;
-}
-
-.textarea {
-    /* background-color: cyan; */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    font-size: 1.25rem;
-}
-
-.textblock {
-    /* background-color: magenta; */
-    width: 725px;
-    margin-top: 20px;
 }
 
 .resources-menu, .people-menu, .curriculum-menu, .is-menu {
@@ -170,6 +120,7 @@ h1 {
     position: relative;
     /* background-color: magenta; */
     z-index: 99;
+    display: none;
 }
 
 .ham-menu span {
@@ -212,13 +163,129 @@ h1 {
     .navigation {
         display: none;
     }
-    h1 {
-        font-size: 3rem;
+    #index-heading, #faculty-heading  {
+        font-size: 4rem;
+    }
+    .ham-menu {
+        display: block;
+    }
+    .faculty-text {
+        font-size: 0.6rem;
     }
 }
 
 @media (min-width: 1001px) {
+    .navigation {
+        display: flex;
+    }
+    #index-heading {
+        font-size: 5.95em;
+    }
+    #faculty-heading {
+        font-size: 4.5rem;
+    }
     .ham-menu {
         display: none;
     }
+    .faculty-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* INDEX */
+
+.slide {
+    height: 100%;
+    display: none;
+    background-size: cover;
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 600px;
+}
+
+.displaySlide {
+    display: block;
+    color: white;
+}
+
+#slideshow button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+#index-heading {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.textarea {
+    /* background-color: cyan; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.textblock {
+    /* background-color: magenta; */
+    width: 700px;
+    margin-top: 40px;
+}
+
+
+
+/* FACULTY */
+
+#faculty-heading {
+    /* text-align: center; */
+    margin: 20px 0 20px 0;
+    /* background-color: red; */
+    /* display: inline-block; */
+}
+
+.faculty-wrapper {
+    /* background-color: magenta; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* height: 10%; */
+    /* width: 50%; */
+}
+
+.faculty-text {
+    /* background-color: cyan; */
+    width: 72.5%;
+    margin: auto 0 auto 0;
+    /* height: auto; */
+    /* margin-left: 2.5%; */
+    /* width: 100%; */
+    display: block;
+    /* font-size: 1.5rem; */
+}
+
+.faculty-wrapper img {
+    width: 22.5%;
 }
