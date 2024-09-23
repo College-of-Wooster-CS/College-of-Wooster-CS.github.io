@@ -111,9 +111,10 @@ li:hover ul.dropdown {
     /* align-items: center; */
     padding-right: 45px;
     text-align: right;
-    font-size: 6rem;
+    font-size: 9rem;
     transition: .3s ease;
     z-index: 9;
+    overflow: scroll;
 }
 
 .mobile-menu.active {
@@ -121,7 +122,11 @@ li:hover ul.dropdown {
 }
 
 .mobile-menu li ul {
-    font-size: 4rem;
+    font-size: 5rem;
+}
+
+.mobile-menu li{
+    margin-top: 25px;
 }
 
 /* .mobile-menu ul {

@@ -16,7 +16,7 @@ fetch('./content/home/home_copy.json')
         });
     });
 
-setTimeout(initializeSlider, 100);
+setTimeout(initializeSlider, 500);
 
 let slideIndex = 0;
 

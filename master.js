@@ -6,7 +6,7 @@ fetch('/nav.html')
         // console.log(data);
     });
 
-setTimeout(delayedSetup, 100);
+setTimeout(delayedSetup, 500);
 // document.addEventListener("DOMContentLoaded", delayedSetup);
 
 function delayedSetup(){
