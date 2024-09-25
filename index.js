@@ -1,3 +1,4 @@
+// Populates slideshow
 const imageTarget = document.querySelector('#slideshow')
 fetch('./content/home/home_images.json')
     .then(res => res.json())
@@ -7,6 +8,7 @@ fetch('./content/home/home_images.json')
         });
     });
 
+// Populates text
 const textTarget = document.querySelector('.textarea')
 fetch('./content/home/home_copy.json')
     .then(res => res.json())
@@ -17,13 +19,11 @@ fetch('./content/home/home_copy.json')
     });
 
 setTimeout(initializeSlider, 500);
-
 let slideIndex = 0;
-
 let intervalId = null;
-
 var slides = null;
 
+// Shows first slide and starts slideshow timer
 function initializeSlider(){
     slides = document.querySelectorAll(".slide");
     if(slides.length > 0){
@@ -32,6 +32,7 @@ function initializeSlider(){
     }
 }
 
+// Shows the currently indexed slide and hides all others
 function showSlide(index){
     if(index >= slides.length){
         slideIndex = 0;
@@ -45,13 +46,13 @@ function showSlide(index){
     slides[slideIndex].classList.add("displaySlide");
 }
 
+// Resets slideshow timer, updates slide index, and calls show slide
 function prevSlide(){
     clearInterval(intervalId);
     slideIndex--;
     showSlide(slideIndex);
     intervalId = setInterval(nextSlide, 5000);
 }
-
 function nextSlide(){
     clearInterval(intervalId);
     slideIndex++;

@@ -1,3 +1,4 @@
+//Populates the navigation
 const nav = document.querySelector('nav');
 fetch('/nav.html')
     .then(res=>res.text())
@@ -5,9 +6,9 @@ fetch('/nav.html')
         nav.innerHTML=data;
     });
 
+//Scripts that should not run before the dynamic content in filled in
 setTimeout(delayedSetup, 500);
 // document.addEventListener("DOMContentLoaded", delayedSetup);
-
 function delayedSetup(){
     const hamMenu = document.querySelector('.ham-menu');
     const navigation = document.querySelector('.navigation');
