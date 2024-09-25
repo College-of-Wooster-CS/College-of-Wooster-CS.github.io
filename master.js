@@ -3,7 +3,6 @@ fetch('/nav.html')
     .then(res=>res.text())
     .then(data=>{
         nav.innerHTML=data;
-        // console.log(data);
     });
 
 setTimeout(delayedSetup, 500);
@@ -11,10 +10,10 @@ setTimeout(delayedSetup, 500);
 
 function delayedSetup(){
     const hamMenu = document.querySelector('.ham-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const navigation = document.querySelector('.navigation');
     hamMenu.addEventListener('click', () => {
         hamMenu.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
     })
     
     const resources = document.querySelector('.resources');
