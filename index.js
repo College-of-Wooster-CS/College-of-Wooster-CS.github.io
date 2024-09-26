@@ -9,14 +9,14 @@ fetch('./content/home/home_images.json')
     });
 
 // Populates text
-const textTarget = document.querySelector('.textarea')
-fetch('./content/home/home_copy.json')
-    .then(res => res.json())
-    .then(data => {
-        data.forEach(element => {
-            textTarget.insertAdjacentHTML('beforeend', `<div class="textblock"><h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br></div>`);
-        });
-    });
+// const textTarget = document.querySelector('.textarea')
+// fetch('./content/home/home_copy.json')
+//     .then(res => res.json())
+//     .then(data => {
+//         data.forEach(element => {
+//             textTarget.insertAdjacentHTML('beforeend', `<div class="textblock"><h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br></div>`);
+//         });
+//     });
 
 setTimeout(initializeSlider, 500);
 let slideIndex = 0;

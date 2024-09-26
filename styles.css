@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* list-style: none; */
     text-decoration: none;
 }
 
@@ -22,20 +21,16 @@ a {
 }
 
 nav {
-    /* background-color: tan; */
-    /* padding: 1rem; */
     display: flex;
     flex-direction: row;
     /* width: 100%; */
     /* justify-content: space-between; */
-    /* margin-bottom: 40px; */
+    margin-bottom: 20px;
 }
 
 .home {
-    width: 25%;
-    min-width: 300px;
-    /* background-color: green; */
-    /* margin: 0; */
+    width: 275px;
+    /* min-width: 200px; */
 }
 
 nav img {
@@ -109,6 +104,22 @@ nav img {
 
 /* INDEX */
 
+.landing-wrapper {
+    /* background-color: cyan; */
+    display: flex;
+}
+
+.landing-text {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-text p {
+    /* background-color: blue; */
+    font-size: 2rem;
+}
+
 .slide {
     height: 100%;
     display: none;
@@ -117,9 +128,10 @@ nav img {
 
 #slideshow {
     position: relative;
-    width: 100%;
     display: block;
-    height: 600px;
+    height: 560px;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
 .displaySlide {
@@ -147,11 +159,6 @@ nav img {
     right: 0;
 }
 
-/* #index-heading {
-    text-align: center;
-    margin: 20px 0 20px 0;
-} */
-
 .textarea {
     /* background-color: cyan; */
     display: flex;
@@ -171,11 +178,6 @@ nav img {
 
 /* FACULTY */
 
-/* #faculty-heading {
-    margin: 20px 0 20px 0;
-    display: inline-block;
-} */
-
 .faculty-wrapper {
     /* background-color: magenta; */
     display: flex;
@@ -186,9 +188,8 @@ nav img {
 
 .faculty-text {
     /* background-color: cyan; */
+    margin-left: 50px;
     margin: auto 0 auto 0;
-    display: block;
-    font-family: serif;
     overflow-y: auto;
 }
 
@@ -200,10 +201,13 @@ nav img {
 
 
 h1 {
-    margin: 20px 0 20px 0;
+    /* margin: 20px 0 20px 0; */
+    margin-bottom: 20px;
 }
 
 
+
+/* COURSE DESCRIPTIONS */
 
 .chevron {
     display: inline-block;
@@ -214,31 +218,40 @@ h1 {
     height: 20px;
     transform: rotate(45deg);
     margin-right: 20px;
+    top: -6px;
+    position: relative;
 }
 
 .flipped .chevron {
     transform: rotate(-135deg);
+    top: 5px;
 }
-
-/* .flipped {
-    transform: rotate(-135deg);
-} */
 
 .course {
     max-width: 900px;
     margin-bottom: 40px;
     /* background-color: red; */
+    line-height: 1.5;
 }
 
 .course-name {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     margin-bottom: 20px;
+    /* position: relative; */
+    /* background-color: red; */
+    cursor: pointer;
 }
 
 .course-info {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     list-style-position: inside;
     padding-top: 40px;
+    /* background-color: cyan; */
+}
+
+.course-info ul {
+    margin-top: 10px;
+    /* background-color: red; */
 }
 
 .hidden {
@@ -278,6 +291,7 @@ h1 {
     
     .navigation li{
         margin-top: 25px;
+        cursor: pointer;
     }
 
     .resources-menu.active, .people-menu.active, .curriculum-menu.active, .is-menu.active {
@@ -286,6 +300,20 @@ h1 {
 
     .ham-menu {
         display: block;
+    }
+
+
+
+    .landing-wrapper {
+        flex-direction: column;
+    }
+
+    #slideshow {
+        width: 100%;
+    }
+
+    #index-heading {
+        font-size: 5.9vw;
     }
 
 
@@ -315,14 +343,16 @@ h1 {
         font-size: 2rem;
         flex-direction: row;
         justify-content: space-around;
+        /* background-color: red; */
     }
     
-    /* .navigation li {
-        display: inline-block;
+    .navigation li {
+        /* background-color: cyan; */
+        margin: auto 0 auto 0;
+        /* display: inline-block;
         height: 100%;
-        background-color: cyan;
-        position: relative;
-    } */
+        position: relative; */
+    }
     
     .navigation li a {
         display: block;
@@ -353,9 +383,29 @@ h1 {
 
 
 
-    #index-heading {
-        font-size: 5.95em;
+    .landing-wrapper {
+        flex-direction: row;
+        /* background-color: red; */
     }
+
+    #slideshow {
+        width: 60%;
+    }
+
+    .landing-text {
+        width: 35vw;
+        /* background-color: cyan; */
+    }
+    
+    #index-heading {
+        font-size: 6.1vw;
+    }
+
+    .landing-text p {
+        /* background-color: magenta; */
+        margin-right: 12vw;
+    }
+
 
 
 
@@ -371,7 +421,8 @@ h1 {
         margin-left: 40px;
         width: 100%;
         /* width: 68.5vw; */
-        height: 20vw;
+        height: 100%;
+        max-height: 20vw;
     }
 
     .faculty-wrapper img {
