@@ -15,29 +15,18 @@ function delayedSetup(){
     hamMenu.addEventListener('click', () => {
         hamMenu.classList.toggle('active');
         navigation.classList.toggle('active');
+        // nav.classList.toggle('active');
     })
-    
-    const resources = document.querySelector('.resources');
-    const resourcesMenu = document.querySelector('.resources-menu')
-    resources.addEventListener('click', () => {
-        resourcesMenu.classList.toggle('active');
-    })
-    
-    const people = document.querySelector('.people');
-    const peopleMenu = document.querySelector('.people-menu')
-    people.addEventListener('click', () => {
-        peopleMenu.classList.toggle('active');
-    })
-    
-    const curriculum = document.querySelector('.curriculum');
-    const cirriculumMenu = document.querySelector('.curriculum-menu')
-    curriculum.addEventListener('click', () => {
-        cirriculumMenu.classList.toggle('active');
-    })
-    
-    const is = document.querySelector('.is');
-    const isMenu = document.querySelector('.is-menu')
-    is.addEventListener('click', () => {
-        isMenu.classList.toggle('active');
-    })
+
+    // Adds tap functionality to each category-menu pair
+    const categoryNames = document.querySelectorAll(".navigation span");
+    console.log(categoryNames);
+    const categoryMenus = document.querySelectorAll(".navigation ul");
+    console.log(categoryMenus);
+    for(let categoryIndex = 0; categoryIndex < categoryNames.length; categoryIndex++) {
+        categoryNames[categoryIndex].addEventListener('click', () => {
+            categoryMenus[categoryIndex].classList.toggle('active');
+            console.log(4);
+        })
+    }
 }

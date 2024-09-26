@@ -12,8 +12,13 @@
 
 body {
     background-color: rgb(236, 231, 213);
-    padding: 40px 40px 0 40px;
     /* height: 100%; */
+    z-index: 0;
+}
+
+main {
+    padding: 0 40px 0 40px;
+
 }
 
 a {
@@ -23,14 +28,13 @@ a {
 nav {
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
-    /* justify-content: space-between; */
-    margin-bottom: 20px;
+    /* background-color: magenta; */
+    z-index: 999;
+    padding: 40px 40px 40px 40px;
 }
 
 .home {
     width: 275px;
-    /* min-width: 200px; */
 }
 
 nav img {
@@ -45,11 +49,11 @@ nav img {
     list-style: none;
 }
 
-.navigation a:hover, .navigation span:hover {
+.navigation a:hover {
     text-decoration: underline;
 }
 
-.resources-menu, .people-menu, .curriculum-menu, .is-menu {
+.navigation ul {
     display: none;
     list-style: none;
 }
@@ -87,7 +91,6 @@ nav img {
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%) rotate(45deg);
-    /* transform: translate(-50%, -50%) rotate(45deg); */
 }
 
 .ham-menu.active span:nth-child(2) {
@@ -97,7 +100,6 @@ nav img {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%) rotate(-45deg);
-    /* transform: translate(-50%, 50%) rotate(-45deg); */
 }
 
 
@@ -131,7 +133,6 @@ nav img {
     display: block;
     height: 560px;
     margin-right: 40px;
-    margin-top: 20px;
 }
 
 .displaySlide {
@@ -201,7 +202,6 @@ nav img {
 
 
 h1 {
-    /* margin: 20px 0 20px 0; */
     margin-bottom: 20px;
 }
 
@@ -237,7 +237,6 @@ h1 {
 .course-name {
     font-size: 2.25rem;
     margin-bottom: 20px;
-    /* position: relative; */
     /* background-color: red; */
     cursor: pointer;
 }
@@ -261,10 +260,10 @@ h1 {
 
 
 @media (max-width: 1280px) {
+
     .navigation {
         background-color: white;
         height: 100%;
-        /* height: 100vh; */
         max-width: 1280px;
         position: fixed;
         top: 0;
@@ -294,7 +293,7 @@ h1 {
         cursor: pointer;
     }
 
-    .resources-menu.active, .people-menu.active, .curriculum-menu.active, .is-menu.active {
+    .navigation ul.active {
         display: block;
     }
 
@@ -349,16 +348,12 @@ h1 {
     .navigation li {
         /* background-color: cyan; */
         margin: auto 0 auto 0;
-        /* display: inline-block;
-        height: 100%;
-        position: relative; */
     }
     
     .navigation li a {
         display: block;
         padding: 20px 25px;
         font-size: 1.5rem;
-        /* margin: auto 0 auto 0; */
     }
 
     .navigation li ul {
@@ -367,19 +362,15 @@ h1 {
         border-style:solid;
     }
 
-    .resources:hover .resources-menu, .people:hover .people-menu, .curriculum:hover .curriculum-menu, .is:hover .is-menu {
+    .navigation li:hover ul {
         display: block;
     }
     
-    .resources-menu, .people-menu, .curriculum-menu, .is-menu {
+    .navigation ul {
         position: absolute;
         z-index: 99;
         background-color: white;
     }
-
-    /* .resources-menu li, .people-menu li, .curriculum-menu li, .is-menu li {
-        display: block;
-    } */
 
 
 
@@ -420,7 +411,6 @@ h1 {
         margin-right: 40px;
         margin-left: 40px;
         width: 100%;
-        /* width: 68.5vw; */
         height: 100%;
         max-height: 20vw;
     }
