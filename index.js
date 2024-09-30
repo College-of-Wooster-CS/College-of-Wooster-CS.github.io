@@ -4,19 +4,19 @@ fetch('./content/home/home_images.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
-            imageTarget.insertAdjacentHTML('beforeend', `<div class="slide" style="background-image:url(content/home/images/${element.image});">${element.caption}</div>`);
+            imageTarget.insertAdjacentHTML('beforeend', `<div class="slide" style="background-image:url(content/home/images/${element.image});"><div class="slide-caption">${element.caption}</div></div>`);
         });
     });
 
 // Populates text
-// const textTarget = document.querySelector('.textarea')
-// fetch('./content/home/home_copy.json')
-//     .then(res => res.json())
-//     .then(data => {
-//         data.forEach(element => {
-//             textTarget.insertAdjacentHTML('beforeend', `<div class="textblock"><h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br></div>`);
-//         });
-//     });
+const textTarget = document.querySelector('.textarea')
+fetch('./content/home/home_copy.json')
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(element => {
+            textTarget.insertAdjacentHTML('beforeend', `<div class="textblock"><h2 class="homeheading">${element.heading}</h2><br><p class="homebody">${element.body}</p><br></div>`);
+        });
+    });
 
 setTimeout(initializeSlider, 500);
 let slideIndex = 0;

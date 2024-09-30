@@ -140,6 +140,13 @@ nav img {
     color: white;
 }
 
+.slide-caption {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+}
+
 #slideshow button{
     position: absolute;
     top: 50%;
@@ -171,7 +178,6 @@ nav img {
 
 .textblock {
     /* background-color: magenta; */
-    width: 700px;
     margin-top: 40px;
 }
 
@@ -315,6 +321,10 @@ h1 {
         font-size: 5.9vw;
     }
 
+    .textblock {
+        width: 100%;
+    }
+
 
 
     h1  {
@@ -395,6 +405,10 @@ h1 {
     .landing-text p {
         /* background-color: magenta; */
         margin-right: 12vw;
+    }
+
+    .textblock {
+        width: 29.5vw;
     }
 
 
