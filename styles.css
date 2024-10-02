@@ -307,15 +307,16 @@ h1 {
         display: block;
     }
 
-
-
     .landing-wrapper {
         flex-direction: column;
     }
 
     #slideshow {
         width: 100%;
+        margin-bottom: 20px;
     }
+
+
 
     #index-heading {
         font-size: 5.9vw;
