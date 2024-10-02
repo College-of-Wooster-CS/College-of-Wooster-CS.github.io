@@ -42,6 +42,20 @@ nav img {
     /* background-color: cyan; */
 }
 
+.category-name {
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: red; */
+}
+
+.chevron {
+    display: inline-block;
+    /* border-right: 4px solid rgb(229, 21, 21); */
+    transform: rotate(45deg);
+    position: relative;
+    /* background-color: cyan; */
+}
+
 .navigation {
     display: flex;
     /* background-color: cyan; */
@@ -100,6 +114,11 @@ nav img {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%) rotate(-45deg);
+}
+
+
+h1 {
+    margin-bottom: 20px;
 }
 
 
@@ -207,28 +226,21 @@ nav img {
 
 
 
-h1 {
-    margin-bottom: 20px;
-}
 
 
 
 /* COURSE DESCRIPTIONS */
 
-.chevron {
-    display: inline-block;
-    border-right: 4px solid;
-    /* border-right: 4px solid rgb(229, 21, 21); */
-    border-bottom: 4px solid;
+.course .chevron {
     width: 20px;
     height: 20px;
-    transform: rotate(45deg);
+    border-right: 4px solid;
+    border-bottom: 4px solid;
     margin-right: 20px;
     top: -6px;
-    position: relative;
 }
 
-.flipped .chevron {
+.course .flipped .chevron {
     transform: rotate(-135deg);
     top: 5px;
 }
@@ -267,6 +279,12 @@ h1 {
 
 @media (max-width: 1280px) {
 
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: rgb(236, 231, 213);
+    }
+
     .navigation {
         background-color: white;
         height: 100%;
@@ -278,7 +296,7 @@ h1 {
         padding-top: 150px;
         padding-right: 45px;
         text-align: right;
-        font-size: 9rem;
+        font-size: 7rem;
         transition: .3s ease;
         z-index: 9;
         overflow: scroll;
@@ -288,6 +306,25 @@ h1 {
 
     .navigation.active {
         right: 0;
+    }
+
+    .category-name {
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    nav .chevron {
+        width: 35px;
+        height: 35px;
+        border-right: 8px solid;
+        border-bottom: 8px solid;
+        top: 35px;
+        margin-right: 25px;
+    }
+
+    .navigation .flipped .chevron {
+        transform: rotate(-135deg);
+        top: 55px;
     }
 
     .navigation li ul {
@@ -359,6 +396,15 @@ h1 {
     .navigation li {
         /* background-color: cyan; */
         margin: auto 0 auto 0;
+    }
+
+    nav .chevron {
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        top: 9px;
+        margin-left: 15px;
     }
     
     .navigation li a {
