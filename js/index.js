@@ -1,16 +1,16 @@
 // Populates slideshow
 const imageTarget = document.querySelector('#slideshow')
-fetch('./content/home/home_images.json')
+fetch('/content/home/home_images.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
-            imageTarget.insertAdjacentHTML('beforeend', `<div class="slide" style="background-image:url(content/home/images/${element.image});"><div class="slide-caption">${element.caption}</div></div>`);
+            imageTarget.insertAdjacentHTML('beforeend', `<div class="slide" style="background-image:url(/content/home/images/${element.image});"><div class="slide-caption">${element.caption}</div></div>`);
         });
     });
 
 // Populates text
 const textTarget = document.querySelector('.textarea')
-fetch('./content/home/home_copy.json')
+fetch('/content/home/home_copy.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
