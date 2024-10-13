@@ -1,11 +1,9 @@
-// const fs = require("fs");
-// fs.readdirSync(".levels/").forEach(file => {
-//     //Print file name
-//     console.log(file)
-//     /*
-//     Run this to print the file contents
-//     console.log(readFileSync(".levels/" + file, {encoding: "utf8"}))
-//     */
-// })
-// //but if your goal is just to print the file name you can do this
-// fs.readFileSync(".levels/").forEach(console.log)
+// Populates text
+const textTarget = document.querySelector('main')
+fetch('/content/announcements/announcements.json')
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(element => {
+            textTarget.insertAdjacentHTML('beforeend', `<div class="announcement"><h2 class="announcement-heading">${element.heading}</h2><br><p class="announcement-body">${element.body}</p><br></div>`);
+        });
+    });
