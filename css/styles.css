@@ -420,7 +420,7 @@ h1 {
 
 
     #announcements-heading {
-        font-size: 6vw;
+        font-size: 7vw;
     }
     
     .announcement-heading {
@@ -428,7 +428,7 @@ h1 {
     }
     
     .announcement-body {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
 
@@ -450,11 +450,11 @@ h1 {
 
 
     #senior-info-heading {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     
     .senior-info-links {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
 
