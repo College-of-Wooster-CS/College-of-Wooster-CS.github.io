@@ -312,12 +312,7 @@ h1 {
 
 /* SENIOR INFORMATION */
 
-#senior-info-heading {
-    font-size: 3vw;
-}
-
 .senior-info-links {
-    font-size: 2vw;
     list-style: none;
 }
 
@@ -398,6 +393,13 @@ h1 {
         display: block;
     }
 
+    /* ?????????? */
+    h1  {
+        font-size: 4rem;
+    }
+
+
+
     .landing-wrapper {
         flex-direction: column;
     }
@@ -406,8 +408,6 @@ h1 {
         width: 100%;
         margin-bottom: 20px;
     }
-
-
 
     #index-heading {
         font-size: 5.9vw;
@@ -419,9 +419,19 @@ h1 {
 
 
 
-    h1  {
-        font-size: 4rem;
+    #announcements-heading {
+        font-size: 6vw;
     }
+    
+    .announcement-heading {
+        font-size: 4vw;
+    }
+    
+    .announcement-body {
+        font-size: 2vw;
+    }
+
+
 
     .faculty-text {
         font-size: 1.75rem;
@@ -435,6 +445,16 @@ h1 {
 
     .faculty-wrapper {
         flex-direction: column;
+    }
+
+
+
+    #senior-info-heading {
+        font-size: 5vw;
+    }
+    
+    .senior-info-links {
+        font-size: 4vw;
     }
 }
 
@@ -514,12 +534,23 @@ h1 {
 
 
 
+    #announcements-heading {
+        font-size: 5vw;
+    }
+    
+    .announcement-heading {
+        font-size: 2vw;
+    }
+    
+    .announcement-body {
+        font-size: 1.4vw;
+    }
+
+
 
     #faculty-heading, #course-descriptions-heading {
         font-size: 4.5rem;
     }
-
-
 
     .faculty-text {
         font-size: 1.3rem;
@@ -537,5 +568,15 @@ h1 {
 
     .faculty-wrapper {
         flex-direction: row;
+    }
+
+
+
+    #senior-info-heading {
+        font-size: 3vw;
+    }
+    
+    .senior-info-links {
+        font-size: 2vw;
     }
 }
