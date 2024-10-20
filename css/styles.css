@@ -310,17 +310,30 @@ h1 {
 
 
 
-/* SENIOR INFORMATION */
+/* INDEPENDENT STUDY */
 
-.senior-info-links {
+.is-links {
     list-style: none;
+    margin-bottom: 3vw;
+    font-weight: bold;
 }
 
-.senior-info-links a {
+.is-links a {
     text-decoration: underline;
+    font-weight: normal;
 }
 
-.senior-info-links li {
+.is-links li {
+    margin-bottom: 2vw;
+}
+
+#fall-presentations {
+    list-style: disc;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+#fall-presentations li {
     margin-bottom: 1vw;
 }
 
@@ -449,11 +462,11 @@ h1 {
 
 
 
-    #senior-info-heading {
+    #is-heading {
         font-size: 6vw;
     }
     
-    .senior-info-links {
+    .is-links {
         font-size: 5vw;
     }
 }
@@ -481,7 +494,7 @@ h1 {
         margin-left: 15px;
     }
     
-    .navigation li a {
+    .navigation ul a {
         display: block;
         padding: 20px 25px;
         font-size: 1.5rem;
@@ -572,11 +585,11 @@ h1 {
 
 
 
-    #senior-info-heading {
+    #is-heading {
         font-size: 3vw;
     }
     
-    .senior-info-links {
+    .is-links {
         font-size: 2vw;
     }
 }
