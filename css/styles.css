@@ -316,6 +316,7 @@ h1 {
     list-style: none;
     margin-bottom: 3vw;
     font-weight: bold;
+    margin-top: 3vw;
 }
 
 .is-links a {
@@ -324,18 +325,24 @@ h1 {
 }
 
 .is-links li {
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
 }
 
-#fall-presentations {
+.link-sublist {
     list-style: disc;
     margin-left: 2vw;
     margin-top: 1vw;
 }
 
-#fall-presentations li {
+.link-sublist li {
     margin-bottom: 1vw;
 }
+
+.hours-list {
+    font-weight: normal;
+}
+
+
 
 
 
@@ -469,6 +476,10 @@ h1 {
     .is-links {
         font-size: 5vw;
     }
+
+    .hours-list {
+        font-size: 4.25vw;
+    }
 }
 
 @media (min-width: 1281px) {
@@ -586,10 +597,15 @@ h1 {
 
 
     #is-heading {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     
     .is-links {
         font-size: 2vw;
     }
+
+    .hours-list {
+        font-size: 1.75vw;
+    }
+
 }
