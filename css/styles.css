@@ -236,6 +236,43 @@ h1 {
     font-size: 4vw;
 }
 
+.hours-text {
+    font-weight: normal;
+    margin-top: 1vw;
+}
+
+.hours-list {
+    font-weight: bold;
+    list-style: none;
+}
+
+.hours-list li {
+    margin-top: 2vw;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.hours-sublist li {
+    margin-top: 1vw;
+}
+
+.hours-sublist {
+    list-style: none;
+    font-weight: normal;
+}
+
+.links-table {
+    width: 100%;
+    margin-top: 1vw;
+    height: 8vw;
+}
+
+.links-table tbody {
+    font-weight: normal;
+}
+
 
 
 /* FACULTY */
@@ -338,9 +375,9 @@ h1 {
     margin-bottom: 1vw;
 }
 
-.hours-list {
-    font-weight: normal;
-}
+
+
+
 
 
 
@@ -477,8 +514,19 @@ h1 {
         font-size: 5vw;
     }
 
+
+
+    .hours-text {
+        font-size: 4vw;
+    }
+
     .hours-list {
-        font-size: 4.25vw;
+        font-size: 4vw;
+    }
+
+    .links-table {
+        font-size: 3vw;
+        min-width: 2750px;
     }
 }
 
@@ -604,8 +652,19 @@ h1 {
         font-size: 2vw;
     }
 
+
+
+
+    .hours-text {
+        font-size: 1.5vw;
+    }
+
     .hours-list {
-        font-size: 1.75vw;
+        font-size: 1.5vw;
+    }
+
+    .links-table {
+        font-size: 1.3vw;
     }
 
 }
