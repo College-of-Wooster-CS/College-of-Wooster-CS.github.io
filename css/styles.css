@@ -351,8 +351,8 @@ h1 {
 
 .is-links {
     list-style: none;
-    margin-bottom: 3vw;
     font-weight: bold;
+    margin-bottom: 3vw;
     margin-top: 3vw;
 }
 
@@ -522,6 +522,13 @@ h1 {
 
     .hours-list {
         font-size: 4vw;
+    }
+
+    .table-container {
+        /* border: #000; */
+        border: black;
+        border-width: 0.5vw;
+        border-style:solid;
     }
 
     .links-table {
