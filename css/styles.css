@@ -6,9 +6,9 @@
     text-decoration: none;
 }
 
-/* html {
-    height: 100%;
-} */
+html {
+    font-size: 1vw;
+}
 
 body {
     background-color: rgb(236, 231, 213);
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    padding: 0 40px 0 40px;
+    padding: 0 3vw 0 3vw;
 
 }
 
@@ -28,24 +28,21 @@ a {
 nav {
     display: flex;
     flex-direction: row;
-    /* background-color: magenta; */
     z-index: 999;
-    padding: 40px 40px 40px 40px;
+    padding: 3vw;
 }
 
 .home {
-    width: 275px;
+    width: 20vw;
 }
 
 nav img {
     width: 100%;
-    /* background-color: cyan; */
 }
 
 .category-name {
     display: flex;
     flex-direction: row-reverse;
-    /* background-color: red; */
 }
 
 .chevron {
@@ -53,12 +50,10 @@ nav img {
     /* border-right: 4px solid rgb(229, 21, 21); */
     transform: rotate(45deg);
     position: relative;
-    /* background-color: cyan; */
 }
 
 .navigation {
     display: flex;
-    /* background-color: cyan; */
     width: 100%;
     list-style: none;
 }
@@ -73,20 +68,19 @@ nav img {
 }
 
 .ham-menu {
-    height: 75px;
-    width: 75px;
+    height: 6vw;
+    width: 6vw;
     margin-left: auto;
     position: relative;
-    /* background-color: magenta; */
     z-index: 99;
     display: none;
 }
 
 .ham-menu span {
-    height: 5px;
+    height: 0.5vw;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    border-radius: 25px;
+    border-radius: 1vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,7 +112,7 @@ nav img {
 
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 
@@ -126,18 +120,15 @@ h1 {
 /* INDEX */
 
 .landing-wrapper {
-    /* background-color: cyan; */
     display: flex;
 }
 
 .landing-text {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
 
 .landing-text p {
-    /* background-color: blue; */
     font-size: 2rem;
 }
 
@@ -150,8 +141,8 @@ h1 {
 #slideshow {
     position: relative;
     display: block;
-    height: 560px;
-    margin-right: 40px;
+    height: 71vh;
+    margin-right: 3vw;
 }
 
 .displaySlide {
@@ -175,7 +166,7 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 1vh 1vw;
 }
 
 .previous {
@@ -187,53 +178,27 @@ h1 {
 }
 
 .textarea {
-    /* background-color: cyan; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     font-size: 1.25rem;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .textblock {
-    /* background-color: magenta; */
-    margin-top: 40px;
+    margin-top: 3vw;
 }
 
 
 
-/* ANNOUNCEMENTS */
 
-#announcements-heading {
-    font-size: 5vw;
-    margin-bottom: 2.5vw;
-}
-
-.announcement {
-    border-top: 2px solid;
-    padding-top: 2.5vw;
-    margin-bottom: 2vw;
-    max-width: 990px;
-}
-
-.announcement-heading {
-    font-size: 2vw;
-}
-
-.announcement-body {
-    font-size: 1.4vw;
-}
-
-.announcement-body a {
-    text-decoration: underline;
-}
 
 
 
 /* HELP & TUTORING */
 
 #help-heading {
-    font-size: 4vw;
+    font-size: 4rem;
 }
 
 .hours-text {
@@ -278,16 +243,13 @@ h1 {
 /* FACULTY */
 
 .faculty-wrapper {
-    /* background-color: magenta; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 3vw;
 }
 
 .faculty-text {
-    /* background-color: cyan; */
-    margin-left: 50px;
     margin: auto 0 auto 0;
     overflow-y: auto;
 }
@@ -302,43 +264,38 @@ h1 {
 /* COURSE DESCRIPTIONS */
 
 .course .chevron {
-    width: 20px;
-    height: 20px;
-    border-right: 4px solid;
-    border-bottom: 4px solid;
-    margin-right: 20px;
-    top: -6px;
+    width: 1.4vw;
+    height: 1.4vw;
+    border-right: 0.3vw solid;
+    border-bottom: 0.3vw solid;
+    margin-right: 1vw;
+    top: -0.4vw;
 }
 
 .course .flipped .chevron {
     transform: rotate(-135deg);
-    top: 5px;
+    top: 0.4vw;
 }
 
 .course {
     max-width: 900px;
-    margin-bottom: 40px;
-    /* background-color: red; */
+    margin-bottom: 3vw;
     line-height: 1.5;
 }
 
 .course-name {
     font-size: 2.25rem;
-    margin-bottom: 20px;
-    /* background-color: red; */
+    margin-bottom: 1vw;
     cursor: pointer;
 }
 
 .course-info {
     font-size: 1.5rem;
     list-style-position: inside;
-    padding-top: 40px;
-    /* background-color: cyan; */
 }
 
 .course-info ul {
-    margin-top: 10px;
-    /* background-color: red; */
+    margin-top: 1vw;
 }
 
 .hidden {
@@ -367,7 +324,7 @@ h1 {
 
 .link-sublist {
     list-style: disc;
-    margin-left: 2vw;
+    list-style-position: inside;
     margin-top: 1vw;
 }
 
@@ -383,7 +340,7 @@ h1 {
 
 
 
-@media (max-width: 1280px) {
+@media (max-aspect-ratio: 1/1) {
 
     nav {
         position: sticky;
@@ -394,15 +351,15 @@ h1 {
     .navigation {
         background-color: white;
         height: 100%;
-        max-width: 1280px;
+        /* max-width: 1280px; */
         position: fixed;
         top: 0;
-        right: -1280px;
+        right: -100vw;
         flex-direction: column;
-        padding-top: 150px;
-        padding-right: 45px;
+        padding-top: 8vw;
+        padding-right: 2vw;
         text-align: right;
-        font-size: 7rem;
+        font-size: 10rem;
         transition: .3s ease;
         z-index: 9;
         overflow: scroll;
@@ -420,25 +377,25 @@ h1 {
     }
 
     nav .chevron {
-        width: 35px;
-        height: 35px;
-        border-right: 8px solid;
-        border-bottom: 8px solid;
-        top: 35px;
-        margin-right: 25px;
+        width: 2vw;
+        height: 2vw;
+        border-right: 0.5vw solid;
+        border-bottom: 0.5vw solid;
+        top: 4vw;
+        margin-right: 3vw;
     }
 
     .navigation .flipped .chevron {
         transform: rotate(-135deg);
-        top: 55px;
+        top: 5vw;
     }
 
     .navigation li ul {
-        font-size: 5rem;
+        font-size: 7rem;
     }
     
     .navigation li{
-        margin-top: 25px;
+        /* margin-top: 25px; */
         cursor: pointer;
     }
 
@@ -452,7 +409,7 @@ h1 {
 
     /* ?????????? */
     h1  {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
 
@@ -463,11 +420,11 @@ h1 {
 
     #slideshow {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 3vw;
     }
 
     #index-heading {
-        font-size: 5.9vw;
+        font-size: 6.2rem;
     }
 
     .textblock {
@@ -476,22 +433,8 @@ h1 {
 
 
 
-    #announcements-heading {
-        font-size: 7vw;
-    }
-    
-    .announcement-heading {
-        font-size: 4vw;
-    }
-    
-    .announcement-body {
-        font-size: 3vw;
-    }
-
-
-
     .faculty-text {
-        font-size: 1.75rem;
+        font-size: 3rem;
         width: 100%;
     }
 
@@ -507,21 +450,21 @@ h1 {
 
 
     #is-heading {
-        font-size: 6vw;
+        font-size: 9rem;
     }
     
     .is-links {
-        font-size: 5vw;
+        font-size: 5rem;
     }
 
 
 
     .hours-text {
-        font-size: 4vw;
+        font-size: 4rem;
     }
 
     .hours-list {
-        font-size: 4vw;
+        font-size: 5rem;
     }
 
     .table-container {
@@ -532,43 +475,41 @@ h1 {
     }
 
     .links-table {
-        font-size: 3vw;
+        font-size: 3rem;
         min-width: 2750px;
     }
 }
 
-@media (min-width: 1281px) {
-    
+@media (min-aspect-ratio: 1/1) {
+
     .navigation {
         font-size: 2rem;
         flex-direction: row;
         justify-content: space-around;
-        /* background-color: red; */
     }
     
     .navigation li {
-        /* background-color: cyan; */
         margin: auto 0 auto 0;
     }
 
     nav .chevron {
-        width: 10px;
-        height: 10px;
-        border-right: 2px solid;
-        border-bottom: 2px solid;
-        top: 9px;
-        margin-left: 15px;
+        width: 0.75vw;
+        height: 0.75vw;
+        border-right: 0.25vw solid;
+        border-bottom: 0.25vw solid;
+        top: 0.75vw;
+        margin-left: 1vw;
     }
     
     .navigation ul a {
         display: block;
-        padding: 20px 25px;
+        padding: 1.5vw 1.5vw;
         font-size: 1.5rem;
     }
 
     .navigation li ul {
         border: #808080;
-        border-width: 1px;
+        border-width: 0.15vw;
         border-style:solid;
     }
 
@@ -586,7 +527,6 @@ h1 {
 
     .landing-wrapper {
         flex-direction: row;
-        /* background-color: red; */
     }
 
     #slideshow {
@@ -595,34 +535,18 @@ h1 {
 
     .landing-text {
         width: 35vw;
-        /* background-color: cyan; */
     }
     
     #index-heading {
-        font-size: 6.1vw;
+        font-size: 6.1rem;
     }
 
     .landing-text p {
-        /* background-color: magenta; */
         margin-right: 12vw;
     }
 
     .textblock {
         width: 29.5vw;
-    }
-
-
-
-    #announcements-heading {
-        font-size: 5vw;
-    }
-    
-    .announcement-heading {
-        font-size: 2vw;
-    }
-    
-    .announcement-body {
-        font-size: 1.4vw;
     }
 
 
@@ -633,8 +557,8 @@ h1 {
 
     .faculty-text {
         font-size: 1.3rem;
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 3vw;
+        margin-left: 3vw;
         width: 100%;
         height: 100%;
         max-height: 20vw;
@@ -652,26 +576,26 @@ h1 {
 
 
     #is-heading {
-        font-size: 3.5vw;
+        font-size: 3.5rem;
     }
     
     .is-links {
-        font-size: 2vw;
+        font-size: 2rem;
     }
 
 
 
 
     .hours-text {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
     }
 
     .hours-list {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
     }
 
     .links-table {
-        font-size: 1.3vw;
+        font-size: 1.3rem;
     }
 
 }
