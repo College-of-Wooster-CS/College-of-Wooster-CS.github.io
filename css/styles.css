@@ -29,7 +29,6 @@ nav {
     display: flex;
     flex-direction: row;
     z-index: 999;
-    padding: 3vw;
 }
 
 .home {
@@ -37,7 +36,8 @@ nav {
 }
 
 nav img {
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
 }
 
 .category-name {
@@ -68,8 +68,8 @@ nav img {
 }
 
 .ham-menu {
-    height: 6vw;
-    width: 6vw;
+    height: 7vw;
+    width: 7vw;
     margin-left: auto;
     position: relative;
     z-index: 99;
@@ -128,10 +128,6 @@ h1 {
     flex-direction: column;
 }
 
-.landing-text p {
-    font-size: 2rem;
-}
-
 .slide {
     height: 100%;
     display: none;
@@ -161,12 +157,12 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 2vmax;
     background-color: hsla(0, 0%, 0%, 0.5);
     color: white;
     border: none;
     cursor: pointer;
-    padding: 1vh 1vw;
+    padding: 1vh 1vh;
 }
 
 .previous {
@@ -181,7 +177,6 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    font-size: 1.25rem;
     margin-bottom: 2vw;
 }
 
@@ -334,18 +329,14 @@ h1 {
 
 
 
-
-
-
-
-
-
 @media (max-aspect-ratio: 1/1) {
 
     nav {
         position: sticky;
         top: 0;
         background-color: rgb(236, 231, 213);
+        height: 13vw;
+        padding: 3vw;
     }
 
     .navigation {
@@ -359,7 +350,7 @@ h1 {
         padding-top: 8vw;
         padding-right: 2vw;
         text-align: right;
-        font-size: 10rem;
+        font-size: 13rem;
         transition: .3s ease;
         z-index: 9;
         overflow: scroll;
@@ -391,11 +382,11 @@ h1 {
     }
 
     .navigation li ul {
-        font-size: 7rem;
+        font-size: 8rem;
     }
     
     .navigation li{
-        /* margin-top: 25px; */
+        margin-top: 3vw;
         cursor: pointer;
     }
 
@@ -408,9 +399,9 @@ h1 {
     }
 
     /* ?????????? */
-    h1  {
+    /* h1  {
         font-size: 6rem;
-    }
+    } */
 
 
 
@@ -418,13 +409,30 @@ h1 {
         flex-direction: column;
     }
 
+    .landing-text p {
+        font-size: 3rem;
+    }
+
     #slideshow {
         width: 100%;
         margin-bottom: 3vw;
+        height: 60vw;
+    }
+
+    #slideshow button {
+        font-size: 5rem;
+    }    
+
+    .slide-caption {
+        font-size: 2.5rem;
     }
 
     #index-heading {
         font-size: 6.2rem;
+    }
+
+    .textarea {
+        font-size: 3rem;
     }
 
     .textblock {
@@ -482,6 +490,12 @@ h1 {
 
 @media (min-aspect-ratio: 1/1) {
 
+    nav {
+        height: 10vw;
+        /* background-color: red; */
+        padding: 3vw;
+    }
+
     .navigation {
         font-size: 2rem;
         flex-direction: row;
@@ -533,6 +547,10 @@ h1 {
         width: 60%;
     }
 
+    #slideshow button {
+        font-size: 2rem;
+    }
+
     .landing-text {
         width: 35vw;
     }
@@ -543,11 +561,17 @@ h1 {
 
     .landing-text p {
         margin-right: 12vw;
+        font-size: 2rem;
+    }
+
+    .textarea {
+        font-size: 1.25rem;
     }
 
     .textblock {
         width: 29.5vw;
     }
+    
 
 
 
