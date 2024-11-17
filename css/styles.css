@@ -277,7 +277,6 @@ h1 {
 }
 
 .course {
-    max-width: 900px;
     margin-bottom: 3vw;
     line-height: 1.5;
 }
@@ -658,6 +657,10 @@ h1 {
         font-size: 1.3rem;
     } */
 
+    .latex-text {
+        max-width: 60vw;
+    }
+
     .zi-schedule {
         flex-direction: row;
         font-size: 1.35rem;
@@ -701,6 +704,10 @@ h1 {
 
     #course-descriptions-heading {
         font-size: 4.5rem;
+    }
+
+    .course {
+        max-width: 60vw;
     }
 
     .course-name {
