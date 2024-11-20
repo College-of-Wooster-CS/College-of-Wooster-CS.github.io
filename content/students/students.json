@@ -1,0 +1,55 @@
+[
+    {
+        "year": 2026,
+        "students": [{
+            "firstName": "Same",
+            "lastName": "Name",
+            "ID": "salamander"
+        },
+        {
+            "firstName": "Same",
+            "lastName": "Name",
+            "ID": "snail"
+        }
+    ]
+    },
+    {
+        "year": 2025,
+        "students": [{
+            "firstName": "Test",
+            "lastName": "Name",
+            "ID": ""
+        },
+        {
+            "firstName": "Student",
+            "lastName": "Name",
+            "ID": ""
+        },
+        {
+            "firstName": "",
+            "lastName": "Lastonly",
+            "ID": ""
+        },
+        {
+            "firstName": "No",
+            "lastName": "Image",
+            "ID": ""
+        },
+        {
+            "firstName": "Small",
+            "lastName": "Image",
+            "ID": ""
+        },
+        {
+            "firstName": "First",
+            "lastName": "Last",
+            "ID": ""
+        },
+        {
+            "firstName": "CS",
+            "lastName": "Student",
+            "ID": ""
+        }
+    ]
+    }
+]

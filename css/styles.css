@@ -8,10 +8,6 @@
     text-decoration: none;
 }
 
-html {
-    font-size: 1vw;
-}
-
 body {
     background-color: rgb(236, 231, 213);
     /* height: 100%; */
@@ -19,7 +15,9 @@ body {
 }
 
 main {
-    padding: 0 3vw 0 3vw;
+    /* background-color: cyan; */
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -31,14 +29,11 @@ nav {
     display: flex;
     flex-direction: row;
     z-index: 999;
-}
-
-.home {
-    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav img {
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -69,54 +64,6 @@ nav img {
     list-style: none;
 }
 
-.ham-menu {
-    height: 7vw;
-    width: 7vw;
-    margin-left: auto;
-    position: relative;
-    z-index: 99;
-    display: none;
-}
-
-.ham-menu span {
-    height: 0.5vw;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 1vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
-
-.ham-menu span:nth-child(1) {
-    top: 25%;
-}
-
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%) rotate(45deg);
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%) rotate(-45deg);
-}
-
-
-h1 {
-    margin-bottom: 2vw;
-}
-
 
 
 /* HOME PAGE */
@@ -139,8 +86,6 @@ h1 {
 #slideshow {
     position: relative;
     display: block;
-    height: 71vh;
-    margin-right: 3vw;
 }
 
 .displaySlide {
@@ -164,7 +109,7 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 1vh 1vh;
+    padding: 1% 1%;
 }
 
 .previous {
@@ -179,11 +124,6 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 2vw;
-}
-
-.textblock {
-    margin-top: 3vw;
 }
 
 
@@ -201,31 +141,12 @@ h1 {
 .hours-list {
     font-weight: bold;
     list-style: none;
-    margin-bottom: 3vw;
-}
-
-/* .table-container {
-    overflow-x: auto;
-} */
-
-.hours-sublist li {
-    margin-top: 1vw;
 }
 
 .hours-sublist {
     list-style: none;
     font-weight: normal;
 }
-
-/* .links-table {
-    width: 100%;
-    margin-top: 1vw;
-    height: 8vw;
-}
-
-.links-table tbody {
-    font-weight: normal;
-} */
 
 .zi-schedule {
     font-weight: normal;
@@ -238,6 +159,14 @@ h1 {
 
 
 
+/* LATEX PAGE */
+
+/* should be on wide */
+/* .latex-text {
+    max-width: 60vw;
+} */
+
+
 
 /* FACULTY PAGE */
 
@@ -245,7 +174,6 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 3vw;
 }
 
 .faculty-text {
@@ -260,38 +188,51 @@ h1 {
 
 
 
-/* COURSES PAGE */
+/* STUDENTS PAGE */
 
-.course .chevron {
-    width: 1.4vw;
-    height: 1.4vw;
-    border-right: 0.3vw solid;
-    border-bottom: 0.3vw solid;
-    margin-right: 1vw;
-    top: -0.4vw;
+/* .years-wrapper {
+    background-color: orange;
+} */
+
+/* .year {
+    background-color: yellow;
+} */
+
+.students-wrapper {
+    /* background-color: magenta; */
+    display: flex;
+    flex-flow: row wrap;
 }
+
+.student {
+    overflow: hidden;
+    /* background-color: cyan; */
+    text-align: center;
+}
+
+.student-photo {
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* COURSES PAGE */
 
 .course .flipped .chevron {
     transform: rotate(-135deg);
-    top: 0.4vw;
 }
 
 .course {
-    margin-bottom: 3vw;
     line-height: 1.5;
 }
 
 .course-name {
-    margin-bottom: 1vw;
     cursor: pointer;
 }
 
 .course-info {
     list-style-position: inside;
-}
-
-.course-info ul {
-    margin-top: 1vw;
 }
 
 .hidden {
@@ -305,8 +246,6 @@ h1 {
 .is-links {
     list-style: none;
     font-weight: bold;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
 }
 
 .is-links a {
@@ -314,24 +253,11 @@ h1 {
     font-weight: normal;
 }
 
-.is-links li {
-    margin-bottom: 3vw;
-}
-
 .link-sublist {
     list-style: disc;
     list-style-position: inside;
-    margin-top: 1vw;
     font-weight: normal;
 }
-
-.link-sublist li {
-    margin-bottom: 1vw;
-}
-
-/* table, thead, tbody, th, td, tr { 
-    display: block; 
-} */
 
 
 
@@ -339,12 +265,21 @@ h1 {
 
     /* ALL PAGES TALL */
 
+
+    html {
+        font-size: 1vw;
+    }
+
     nav {
         position: sticky;
         top: 0;
         background-color: rgb(236, 231, 213);
         height: 13vw;
         padding: 3vw;
+    }
+
+    .home {
+        width: 20vw;
     }
 
     .navigation {
@@ -403,14 +338,56 @@ h1 {
     }
 
     .ham-menu {
+        height: 7vw;
+        width: 7vw;
+        margin-left: auto;
+        position: relative;
+        z-index: 99;
         display: block;
     }
+    
+    .ham-menu span {
+        height: 0.5vw;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 1vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+    
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%) rotate(45deg);
+    }
+    
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%) rotate(-45deg);
+    }
 
-    /* ?????????? */
-    /* h1  {
-        font-size: 6rem;
-    } */
+    main {
+        padding: 0 3vw 0 3vw;
+    }
 
+    h1 {
+        margin-bottom: 3vw;
+    }
+    
 
 
     /* HOME PAGE TALL */
@@ -427,6 +404,7 @@ h1 {
         width: 100%;
         margin-bottom: 3vw;
         height: 60vw;
+        margin-right: 3vw;
     }
 
     #slideshow button {
@@ -443,10 +421,12 @@ h1 {
 
     .textarea {
         font-size: 3rem;
+        margin-bottom: 3vw;
     }
 
     .textblock {
         width: 100%;
+        margin-top: 3vw;
     }
 
 
@@ -464,22 +444,12 @@ h1 {
 
     .hours-list {
         font-size: 5rem;
+        margin-bottom: 3vw;
     }
 
     .hours-list li {
         margin-top: 3vw;
     }
-
-    /* .table-container {
-        border: black;
-        border-width: 0.5vw;
-        border-style:solid;
-    } */
-
-    /* .links-table {
-        font-size: 3rem;
-        min-width: 2750px;
-    } */
 
     .zi-schedule {
         flex-direction: column;
@@ -491,6 +461,10 @@ h1 {
         margin-top: 2vw;
     }
 
+    /* .hours-sublist li {
+        margin-top: 1vw;
+    } */
+
 
 
     /* FACULTY PAGE TALL */
@@ -499,9 +473,9 @@ h1 {
         font-size: 8rem;
     }
 
-    .faculty-text {
-        font-size: 3.5rem;
-        width: 100%;
+    .faculty-wrapper {
+        flex-direction: column;
+        margin-bottom: 3vw;
     }
 
     .faculty-wrapper img {
@@ -509,8 +483,41 @@ h1 {
         margin-bottom: 5%;
     }
 
-    .faculty-wrapper {
-        flex-direction: column;
+    .faculty-text {
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+
+
+    /* STUDENTS PAGE TALL */
+    
+    #students-heading {
+        font-size: 5vw;
+    }
+
+    .years-wrapper {
+        margin-bottom: 3vw;
+    }
+
+    .year {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .students-wrapper {
+        gap: 3vw;
+        margin-top: 1.5vw;
+    }
+    
+    .student {
+        font-size: 3vw;
+        width: 28.5vw;
+    }
+
+    .student-photo {
+        height: 35vw;
+        margin-bottom: 1.5vw;
     }
 
 
@@ -521,12 +528,34 @@ h1 {
         font-size: 8rem;
     }
 
+    .course {
+        margin-bottom: 3vw;
+    }
+
+    .course .chevron {
+        width: 1.4vw;
+        height: 1.4vw;
+        border-right: 0.3vw solid;
+        border-bottom: 0.3vw solid;
+        margin-right: 1vw;
+        top: -0.4vw;
+    }
+
+    .course .flipped .chevron {
+        top: 0.4vw;
+    }
+
     .course-name {
         font-size: 4rem;
+        margin-bottom: 1.5vw;
     }
     
     .course-info {
         font-size: 3.25rem;
+    }
+
+    .course-info ul {
+        margin-top: 1.5vw;
     }
 
 
@@ -539,6 +568,20 @@ h1 {
     
     .is-links {
         font-size: 5rem;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+
+    .is-links li {
+        margin-bottom: 3vw;
+    }
+
+    .link-sublist {
+        margin-top: 1.5vw;
+    }
+
+    .link-sublist li {
+        margin-bottom: 1.5vw;
     }
 
 }
@@ -547,10 +590,18 @@ h1 {
 
     /* ALL PAGES WIDE */
 
+    html {
+        font-size: 15px;
+    }
+
     nav {
-        height: 10vw;
-        /* background-color: red; */
-        padding: 3vw;
+        height: 150px;
+        padding: 40px;
+        width: 1510px;
+    }
+
+    .home {
+        width: 22%;
     }
 
     .navigation {
@@ -564,23 +615,23 @@ h1 {
     }
 
     nav .chevron {
-        width: 0.75vw;
-        height: 0.75vw;
-        border-right: 0.25vw solid;
-        border-bottom: 0.25vw solid;
-        top: 0.75vw;
-        margin-left: 1vw;
+        width: 15px;
+        height: 15px;
+        border-right: 3px solid;
+        border-bottom: 3px solid;
+        top: 7px;
+        margin-left: 15px;
     }
     
     .navigation ul a {
         display: block;
-        padding: 1.5vw 1.5vw;
+        padding: 25px 25px;
         font-size: 1.5rem;
     }
 
     .navigation li ul {
         border: #808080;
-        border-width: 0.15vw;
+        border-width: 2px;
         border-style:solid;
     }
 
@@ -594,6 +645,19 @@ h1 {
         background-color: white;
     }
 
+    .ham-menu {
+        display: none;
+    }
+
+    main {
+        width: 1510px;
+        padding: 0 40px 0 40px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
 
 
     /* HOME PAGE WIDE */
@@ -603,7 +667,10 @@ h1 {
     }
 
     #slideshow {
-        width: 60%;
+        /* width: 60%; */
+        width: 860px;
+        height: 560px;
+        margin-right: 40px;
     }
 
     #slideshow button {
@@ -611,7 +678,8 @@ h1 {
     }
 
     .landing-text {
-        width: 35vw;
+        width: 530px;
+        /* width: 37%; */
     }
     
     #index-heading {
@@ -619,83 +687,110 @@ h1 {
     }
 
     .landing-text p {
-        margin-right: 12vw;
+        margin-right: 190px;
         font-size: 2rem;
     }
 
     .textarea {
         font-size: 1.25rem;
+        margin-bottom: 40px;
     }
 
     .textblock {
-        width: 29.5vw;
+        /* width: 29.5vw; */
+        width: 450px;
+        margin-top: 40px;
     }
     
 
 
     /* OFFICE HOURS PAGE WIDE */
 
-
     #help-heading {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .hours-text {
         font-size: 1.5rem;
-        margin-top: 1vw;
+        margin-top: 20px;
     }
 
     .hours-list {
         font-size: 1.5rem;
+        margin-bottom: 40px;
     }
 
     .hours-list li {
-        margin-top: 1vw;
-    }
-
-    /* .links-table {
-        font-size: 1.3rem;
-    } */
-
-    .latex-text {
-        max-width: 60vw;
+        margin-top: 40px;
     }
 
     .zi-schedule {
         flex-direction: row;
         font-size: 1.35rem;
-        line-height: 2vw;
-        margin-top: 1vw;
+        line-height: 40px;
+        margin-top: 20px;
+        column-gap: 20px;
     }
 
-    .zi-day {
-        margin-right: 1vw;
+    .hours-sublist li {
+        margin-top: 40px;
     }
 
 
 
     /* FACULTY PAGE WIDE */
 
-    #faculty-heading, #course-descriptions-heading {
+    #faculty-heading {
         font-size: 4.5rem;
-    }
-
-    .faculty-text {
-        font-size: 1.3rem;
-        margin-right: 3vw;
-        margin-left: 3vw;
-        width: 100%;
-        height: 100%;
-        max-height: 20vw;
-    }
-
-    .faculty-wrapper img {
-        width: 20vw;
-        height: 20vw;
     }
 
     .faculty-wrapper {
         flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .faculty-wrapper img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .faculty-text {
+        font-size: 1.3rem;
+        margin-left: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* STUDENTS PAGE WIDE */
+
+    #students-heading {
+        font-size: 5rem;
+    }
+
+    .years-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .year {
+        font-size: 4rem;
+        margin-bottom: 40px;
+    }
+
+    .students-wrapper {
+        gap: 40px;
+        margin-top: 20px;
+    }
+    
+    .student {
+        font-size: 2rem;
+        width: 250px;
+    }
+
+    .student-photo {
+        height: 300px;
+        margin-bottom: 20px;
     }
 
 
@@ -707,15 +802,34 @@ h1 {
     }
 
     .course {
-        max-width: 60vw;
+        max-width: 920px;
+        margin-bottom: 40px;
+    }
+
+    .course .chevron {
+        width: 20px;
+        height: 20px;
+        border-right: 5px solid;
+        border-bottom: 5px solid;
+        margin-right: 20px;
+        top: -5px;
+    }
+
+    .course .flipped .chevron {
+        top: 5px;
     }
 
     .course-name {
         font-size: 2.25rem;
+        margin-bottom: 20px;
     }
     
     .course-info {
         font-size: 1.5rem;
+    }
+
+    .course-info ul {
+        margin-top: 20px;
     }
 
 
@@ -728,6 +842,20 @@ h1 {
     
     .is-links {
         font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .is-links li {
+        margin-bottom: 40px;
+    }
+
+    .link-sublist {
+        margin-top: 20px;
+    }
+
+    .link-sublist li {
+        margin-bottom: 20px;
     }
 
 }
