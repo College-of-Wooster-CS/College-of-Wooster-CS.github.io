@@ -159,6 +159,21 @@ nav img {
 
 
 
+/* OPPORTUNITIES PAGE */
+
+.opportunities-text {
+    /* max-width: 950px; */
+    line-height: 1.5;
+}
+
+.opportunities-text a {
+    font-weight: bold;
+    text-decoration: underline;
+    /* white-space: nowrap; */
+}
+
+
+
 /* LATEX PAGE */
 
 /* should be on wide */
@@ -190,23 +205,17 @@ nav img {
 
 /* STUDENTS PAGE */
 
-/* .years-wrapper {
-    background-color: orange;
-} */
-
-/* .year {
-    background-color: yellow;
-} */
+.year {
+    font-weight: bold;
+}
 
 .students-wrapper {
-    /* background-color: magenta; */
     display: flex;
     flex-flow: row wrap;
 }
 
 .student {
     overflow: hidden;
-    /* background-color: cyan; */
     text-align: center;
 }
 
@@ -461,9 +470,22 @@ nav img {
         margin-top: 2vw;
     }
 
-    /* .hours-sublist li {
-        margin-top: 1vw;
-    } */
+    .hours-sublist li {
+        margin-top: 1.5vw;
+    }
+
+
+
+    /* OPPORTUNITIES PAGE TALL */
+
+    #opportunities-heading {
+        font-size: 8rem;
+    }
+    
+    .opportunities-text {
+        font-size: 4rem;
+        margin-bottom: 3vw;
+    }
 
 
 
@@ -655,7 +677,7 @@ nav img {
     }
 
     h1 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
 
@@ -713,27 +735,42 @@ nav img {
     .hours-text {
         font-size: 1.5rem;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .hours-list {
-        font-size: 1.5rem;
-        margin-bottom: 40px;
+        font-size: 2rem;
     }
 
     .hours-list li {
-        margin-top: 40px;
+        margin-bottom: 40px;
+        /* margin-top: 40px; */
     }
 
     .zi-schedule {
         flex-direction: row;
         font-size: 1.35rem;
         line-height: 40px;
-        margin-top: 20px;
         column-gap: 20px;
     }
 
     .hours-sublist li {
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+
+
+    /* OPPORTUNITIES PAGE WIDE */
+
+    #opportunities-heading {
+        font-size: 4rem;
+    }
+    
+    .opportunities-text {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
     }
 
 
