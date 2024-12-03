@@ -320,10 +320,10 @@ nav img {
     }
 
     nav .chevron {
-        width: 2vw;
-        height: 2vw;
-        border-right: 0.5vw solid;
-        border-bottom: 0.5vw solid;
+        width: 4vw;
+        height: 4vw;
+        border-right: 1vw solid;
+        border-bottom: 1vw solid;
         top: 4vw;
         margin-right: 3vw;
     }
@@ -617,23 +617,37 @@ nav img {
     }
 
     nav {
-        height: 150px;
         padding: 40px;
         width: 1510px;
+        /* background-color: cyan; */
+        /* width: 100vw; */
+        text-align: left;
+        justify-content: center;
+        align-items: center;
     }
 
     .home {
-        width: 22%;
+        height: 70px;
+        margin-right: 40px;
     }
 
     .navigation {
         font-size: 2rem;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-flow: row wrap;
+        /* column-gap: 4vw; */
+        justify-content: space-between;
+        /* background-color: green; */
+        text-align: right;
     }
     
     .navigation li {
+        padding: 0 20px 0 20px;
         margin: auto 0 auto 0;
+        width: 220px;
+    }
+
+    .category-name {
+        justify-content: left;
     }
 
     nav .chevron {
@@ -651,10 +665,8 @@ nav img {
         font-size: 1.5rem;
     }
 
-    .navigation li ul {
-        border: #808080;
-        border-width: 2px;
-        border-style:solid;
+    .is-link {
+        margin-right: 30px;
     }
 
     .navigation li:hover ul {
@@ -665,6 +677,17 @@ nav img {
         position: absolute;
         z-index: 99;
         background-color: white;
+        border: #808080;
+        border-width: 2px;
+        border-style:solid;
+        width: initial;
+        /* background-color: red; */
+        text-align: left;
+    }
+
+    .navigation li ul li {
+        width: initial;
+        padding: 0;
     }
 
     .ham-menu {
@@ -784,6 +807,8 @@ nav img {
     .faculty-wrapper {
         flex-direction: row;
         margin-bottom: 40px;
+        /* background-color: cyan; */
+        /* width: 87vw; */
     }
 
     .faculty-wrapper img {
@@ -808,6 +833,9 @@ nav img {
 
     .years-wrapper {
         margin-bottom: 40px;
+        background-color: cyan;
+        width: 93vw;
+        max-width: 1420px;
     }
 
     .year {
