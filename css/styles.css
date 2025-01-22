@@ -216,7 +216,7 @@ nav img {
 
 
 
-/* USEFUL LINKS PAGE */
+/* ADDITIONAL LINKS PAGE */
 
 .links-list {
     list-style: none;
@@ -251,6 +251,10 @@ nav img {
 .faculty-text a {
     color: #000;
     text-decoration: underline;
+}
+
+.faculty-name {
+    font-weight: bold;
 }
 
 
@@ -382,7 +386,7 @@ nav img {
 
     .navigation .flipped .chevron {
         transform: rotate(-135deg);
-        top: 5vw;
+        top: 6vw;
     }
 
     .navigation li ul {
@@ -458,7 +462,7 @@ nav img {
     }
 
     .landing-text p {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     #slideshow {
@@ -477,7 +481,7 @@ nav img {
     }
 
     #index-heading {
-        font-size: 6.2rem;
+        font-size: 10rem;
     }
 
     .textarea {
@@ -595,7 +599,7 @@ nav img {
 
 
 
-    /* USEFUL LINKS PAGE TALL */
+    /* ADDITIONAL LINKS PAGE TALL */
 
     #links-heading {
         font-size: 9rem;
@@ -638,8 +642,12 @@ nav img {
     }
 
     .faculty-text {
-        font-size: 3.5rem;
+        font-size: 4rem;
         width: 100%;
+    }
+
+    .faculty-name {
+        /* font-size: 4.5rem; */
     }
 
 
@@ -984,7 +992,7 @@ nav img {
 
 
 
-    /* USEFUL LINKS PAGE WIDE */
+    /* ADDITIONAL LINKS PAGE WIDE */
 
     #links-heading {
         font-size: 3.5rem;
@@ -1033,6 +1041,10 @@ nav img {
         margin-left: 40px;
         width: 100%;
         height: 100%;
+    }
+
+    .faculty-name {
+        /* font-size: 1.3rem; */
     }
 
 
