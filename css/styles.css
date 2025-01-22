@@ -462,7 +462,7 @@ nav img {
     }
 
     .landing-text p {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     #slideshow {
@@ -700,11 +700,11 @@ nav img {
         border-right: 0.3vw solid;
         border-bottom: 0.3vw solid;
         margin-right: 1vw;
-        top: -0.4vw;
+        top: -1vw;
     }
 
     .course .flipped .chevron {
-        top: 0.4vw;
+        top: 0vw;
     }
 
     .course-name {
