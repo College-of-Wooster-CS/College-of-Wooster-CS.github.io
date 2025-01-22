@@ -1,0 +1,14 @@
+[
+    {
+        "image": "bear.jpg",
+        "caption": "A picture of a bear"
+    },
+    {
+        "image": "wolf.jpg",
+        "caption": "A picture of a wolf"
+    },
+    {
+        "image": "moose.jpg",
+        "caption": "A picture of a moose"
+    }
+]

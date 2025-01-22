@@ -2,52 +2,52 @@
     {
         "year": 2026,
         "students": [{
-            "firstName": "Same",
-            "lastName": "Name",
-            "ID": "salamander"
+            "firstName": "Student",
+            "lastName": "A",
+            "ID": ""
         },
         {
-            "firstName": "Same",
-            "lastName": "Name",
-            "ID": "snail"
+            "firstName": "Student",
+            "lastName": "B",
+            "ID": ""
         }
     ]
     },
     {
         "year": 2025,
         "students": [{
-            "firstName": "Test",
-            "lastName": "Name",
+            "firstName": "Student",
+            "lastName": "C",
             "ID": ""
         },
         {
             "firstName": "Student",
-            "lastName": "Name",
+            "lastName": "D",
             "ID": ""
         },
         {
-            "firstName": "",
-            "lastName": "Lastonly",
+            "firstName": "Student",
+            "lastName": "E",
             "ID": ""
         },
         {
-            "firstName": "No",
-            "lastName": "Image",
+            "firstName": "Student",
+            "lastName": "F",
             "ID": ""
         },
         {
-            "firstName": "Small",
-            "lastName": "Image",
+            "firstName": "Student",
+            "lastName": "G",
             "ID": ""
         },
         {
-            "firstName": "First",
-            "lastName": "Last",
+            "firstName": "Student",
+            "lastName": "H",
             "ID": ""
         },
         {
-            "firstName": "CS",
-            "lastName": "Student",
+            "firstName": "Student",
+            "lastName": "I",
             "ID": ""
         }
     ]

@@ -1,14 +1,14 @@
 [
     {
-        "image": "bear.jpg",
-        "caption": "A picture of a bear"
+        "image": "owu_competition_2022.png",
+        "caption": "OWU Programming Competition 2022"
     },
     {
-        "image": "wolf.jpg",
-        "caption": "A picture of a wolf"
+        "image": "ocwic_2023.jpg",
+        "caption": "Ohio Celebration of Women in Computing 2023"
     },
     {
-        "image": "moose.jpg",
-        "caption": "A picture of a moose"
+        "image": "acm_icpc_2023.jpg",
+        "caption": "ACM International Collegiate Programming Competition 2023"
     }
 ]

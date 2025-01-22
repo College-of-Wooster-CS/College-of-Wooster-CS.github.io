@@ -162,23 +162,75 @@ nav img {
 /* OPPORTUNITIES PAGE */
 
 .opportunities-text {
-    /* max-width: 950px; */
     line-height: 1.5;
 }
 
 .opportunities-text a {
     font-weight: bold;
     text-decoration: underline;
-    /* white-space: nowrap; */
 }
+
+
+
+/* AFTER WOOSTER PAGE */
+
+.after-wooster-list {
+    /* color: red; */
+    list-style-position: inside;
+}
+
+/* .ater-wooster-text {
+    line-height: 1.5;
+    color: red;
+} */
+
+/* .after-wooster-text a {
+    font-weight: bold;
+    text-decoration: underline;
+} */
+
+
+
+/* PAST EVENTS PAGE */
+
+/* .past-events-year {
+
+}
+
+.past-event {
+
+} */
 
 
 
 /* LATEX PAGE */
 
-/* should be on wide */
-/* .latex-text {
-    max-width: 60vw;
+.latex-text {
+    line-height: 1.5;
+}
+
+.latex-text a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* USEFUL LINKS PAGE */
+
+.links-list {
+    list-style: none;
+}
+
+.links-list a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* .link-sublist {
+    list-style: disc;
+    list-style-position: inside;
+    font-weight: normal;
 } */
 
 
@@ -486,6 +538,86 @@ nav img {
         font-size: 4rem;
         margin-bottom: 3vw;
     }
+
+
+
+    /* AFTER WOOSTER PAGE TALL */
+
+    #after-wooster-heading {
+        font-size: 8rem;
+    }
+
+    .after-wooster-list-heading {
+        font-size: 4rem;
+        margin-bottom: 2vw;
+    }
+    
+    .after-wooster-list {
+        font-size: 3.5rem;
+        margin-bottom: 3vw;
+    }
+
+    .after-wooster-list li {
+        margin-bottom: 1vw;
+    }
+
+
+
+    /* PAST EVENTS PAGE TALL */
+    
+    .past-events-year {
+        font-size: 5rem;
+        margin-bottom: 3vw;
+    }
+    
+    .past-event {
+        font-size: 4rem;
+        margin-top: 2vw;
+    }
+
+    .past-event img {
+        width: 91vw;
+        margin-top: 1vw;
+    }
+
+
+
+    /* LATEX PAGE TALL */
+
+    #latex-heading {
+        font-size: 8rem;
+    }
+    
+    .latex-text {
+        font-size: 4rem;
+        margin-bottom: 3vw;
+    }
+
+
+
+    /* USEFUL LINKS PAGE TALL */
+
+    #links-heading {
+        font-size: 9rem;
+    }
+    
+    .links-list {
+        font-size: 5rem;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+
+    .links-list li {
+        margin-bottom: 3vw;
+    }
+
+    /* .link-sublist {
+        margin-top: 1.5vw;
+    }
+
+    .link-sublist li {
+        margin-bottom: 1.5vw;
+    } */
 
 
 
@@ -798,6 +930,86 @@ nav img {
 
 
 
+    /* AFTER WOOSTER PAGE WIDE */
+
+    #after-wooster-heading {
+        font-size: 4rem;
+    }
+
+    .after-wooster-list-heading {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .after-wooster-list {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+
+    .after-wooster-list li {
+        margin-bottom: 10px;
+    }
+
+
+
+    /* PAST EVENTS PAGE WIDE */
+    
+    .past-events-year {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    
+    .past-event {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .past-event img {
+        width: 800px;
+        margin-top: 20px;
+    }
+
+
+
+    /* LATEX PAGE WIDE */
+
+    #latex-heading {
+        font-size: 4rem;
+    }
+    
+    .latex-text {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+
+
+
+    /* USEFUL LINKS PAGE WIDE */
+
+    #links-heading {
+        font-size: 3.5rem;
+    }
+    
+    .links-list {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .links-list li {
+        margin-bottom: 40px;
+    }
+
+    /* .link-sublist {
+        margin-top: 20px;
+    }
+
+    .link-sublist li {
+        margin-bottom: 20px;
+    } */
+
+
+
     /* FACULTY PAGE WIDE */
 
     #faculty-heading {
@@ -833,7 +1045,7 @@ nav img {
 
     .years-wrapper {
         margin-bottom: 40px;
-        background-color: cyan;
+        /* background-color: cyan; */
         width: 93vw;
         max-width: 1420px;
     }
