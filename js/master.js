@@ -16,7 +16,6 @@ function delayedSetup(){
     hamMenu.addEventListener('click', () => {
         hamMenu.classList.toggle('active');
         navigation.classList.toggle('active');
-        // nav.classList.toggle('active');
     })
 
     // Adds tap functionality to each category-menu pair

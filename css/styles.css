@@ -15,7 +15,6 @@ body {
 }
 
 main {
-    /* background-color: cyan; */
     margin-left: auto;
     margin-right: auto;
 
@@ -62,6 +61,10 @@ nav img {
 .navigation ul {
     display: none;
     list-style: none;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
@@ -153,10 +156,6 @@ nav img {
     display: flex;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 
 
 /* OPPORTUNITIES PAGE */
@@ -191,15 +190,21 @@ nav img {
 
 
 
-/* PAST EVENTS PAGE */
+/* RECENT EVENTS PAGE */
 
-/* .past-events-year {
-
-}
-
-.past-event {
+/* .events-year {
 
 } */
+
+.event {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-text {
+    margin: auto 0 auto 0;
+    overflow-y: auto;
+}
 
 
 
@@ -227,19 +232,12 @@ nav img {
     font-weight: bold;
 }
 
-/* .link-sublist {
-    list-style: disc;
-    list-style-position: inside;
-    font-weight: normal;
-} */
-
 
 
 /* FACULTY PAGE */
 
 .faculty-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -253,9 +251,9 @@ nav img {
     text-decoration: underline;
 }
 
-.faculty-name {
+/* .faculty-name {
     font-weight: bold;
-}
+} */
 
 
 
@@ -308,17 +306,17 @@ nav img {
 
 /* IS PAGE */
 
-.is-links {
+.is-list {
     list-style: none;
     font-weight: bold;
 }
 
-.is-links a {
+.is-list a {
     text-decoration: underline;
     font-weight: normal;
 }
 
-.link-sublist {
+.is-sublist {
     list-style: disc;
     list-style-position: inside;
     font-weight: normal;
@@ -567,21 +565,32 @@ nav img {
 
 
 
-    /* PAST EVENTS PAGE TALL */
+    /* RECENT EVENTS PAGE TALL */
     
-    .past-events-year {
-        font-size: 5rem;
-        margin-bottom: 3vw;
+    #events-heading {
+        font-size: 5vw;
     }
     
-    .past-event {
-        font-size: 4rem;
-        margin-top: 2vw;
+    .events-year {
+        font-size: 5rem;
+        margin-bottom: 6vw;
+    }
+    
+    .event {
+        margin-top: 3vw;
+        flex-direction: column;
     }
 
-    .past-event img {
+    .event img {
         width: 91vw;
         margin-top: 1vw;
+    }
+
+    .event-text {
+        font-size: 3rem;
+        margin-top: 1.5vw;
+        /* line-height: 1.5; */
+
     }
 
 
@@ -615,14 +624,6 @@ nav img {
         margin-bottom: 3vw;
     }
 
-    /* .link-sublist {
-        margin-top: 1.5vw;
-    }
-
-    .link-sublist li {
-        margin-bottom: 1.5vw;
-    } */
-
 
 
     /* FACULTY PAGE TALL */
@@ -646,9 +647,9 @@ nav img {
         width: 100%;
     }
 
-    .faculty-name {
-        /* font-size: 4.5rem; */
-    }
+    /* .faculty-name {
+        font-size: 4.5rem;
+    } */
 
 
 
@@ -728,21 +729,21 @@ nav img {
         font-size: 9rem;
     }
     
-    .is-links {
+    .is-list {
         font-size: 5rem;
         margin-bottom: 3vw;
         margin-top: 3vw;
     }
 
-    .is-links li {
+    .is-list li {
         margin-bottom: 3vw;
     }
 
-    .link-sublist {
+    .is-sublist {
         margin-top: 1.5vw;
     }
 
-    .link-sublist li {
+    .is-sublist li {
         margin-bottom: 1.5vw;
     }
 
@@ -960,21 +961,30 @@ nav img {
 
 
 
-    /* PAST EVENTS PAGE WIDE */
+    /* RECENT EVENTS PAGE WIDE */
+
+    #events-heading {
+        font-size: 5rem;
+    }
     
-    .past-events-year {
+    .events-year {
         font-size: 3rem;
         margin-bottom: 40px;
     }
     
-    .past-event {
-        font-size: 2rem;
-        margin-top: 30px;
+    .event {
+        margin-top: 20px;
+        flex-direction: row;
     }
 
-    .past-event img {
-        width: 800px;
-        margin-top: 20px;
+    .event img {
+        width: 550px;
+    }
+
+    .event-text {
+        font-size: 1.5rem;
+        margin-left: 40px;
+        line-height: 1.5;
     }
 
 
@@ -1008,14 +1018,6 @@ nav img {
         margin-bottom: 40px;
     }
 
-    /* .link-sublist {
-        margin-top: 20px;
-    }
-
-    .link-sublist li {
-        margin-bottom: 20px;
-    } */
-
 
 
     /* FACULTY PAGE WIDE */
@@ -1027,8 +1029,6 @@ nav img {
     .faculty-wrapper {
         flex-direction: row;
         margin-bottom: 40px;
-        /* background-color: cyan; */
-        /* width: 87vw; */
     }
 
     .faculty-wrapper img {
@@ -1043,9 +1043,9 @@ nav img {
         height: 100%;
     }
 
-    .faculty-name {
-        /* font-size: 1.3rem; */
-    }
+    /* .faculty-name {
+        font-size: 1.3rem;
+    } */
 
 
 
@@ -1129,21 +1129,21 @@ nav img {
         font-size: 3.5rem;
     }
     
-    .is-links {
+    .is-list {
         font-size: 2rem;
         margin-bottom: 40px;
         margin-top: 40px;
     }
 
-    .is-links li {
+    .is-list li {
         margin-bottom: 40px;
     }
 
-    .link-sublist {
+    .is-sublist {
         margin-top: 20px;
     }
 
-    .link-sublist li {
+    .is-sublist li {
         margin-bottom: 20px;
     }
 
