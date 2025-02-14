@@ -18,16 +18,15 @@ fetch('/content/home/home_images.json')
 //         });
 //     });
 
+// Shows first slide and starts slideshow timer
 setTimeout(initializeSlider, 500);
 let slideIndex = 0;
 let intervalId = null;
 var slides = null;
-
-// Shows first slide and starts slideshow timer
 function initializeSlider(){
     slides = document.querySelectorAll(".slide");
     if(slides.length > 0){
-        slides[slideIndex].classList.add("displaySlide");
+        slides[slideIndex].classList.add("display-slide");
         intervalId = setInterval(nextSlide, 5000);
     }
 }
@@ -41,9 +40,9 @@ function showSlide(index){
         slideIndex = slides.length - 1;
     }
     slides.forEach(slide =>{
-        slide.classList.remove("displaySlide");
+        slide.classList.remove("display-slide");
     });
-    slides[slideIndex].classList.add("displaySlide");
+    slides[slideIndex].classList.add("display-slide");
 }
 
 // Resets slideshow timer, updates slide index, and calls show slide
