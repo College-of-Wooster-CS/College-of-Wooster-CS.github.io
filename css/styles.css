@@ -135,7 +135,10 @@ nav img {
 
 .text-block {
     line-height: 1.4;
+    list-style-position: inside;
 }
+
+
 
 
 
@@ -201,7 +204,7 @@ nav img {
 .research-images-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .research-images-wrapper img {
@@ -243,6 +246,10 @@ nav img {
 .event {
     display: flex;
     justify-content: space-between;
+}
+
+.event img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .event-text {
@@ -389,7 +396,7 @@ nav img {
 .is-images-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .is-images-wrapper img {
@@ -462,7 +469,7 @@ nav img {
     }
 
     .navigation li ul {
-        font-size: 8rem;
+        font-size: 7rem;
     }
     
     .navigation li{
@@ -558,13 +565,13 @@ nav img {
     }
 
     .text-area {
-        font-size: 3rem;
+        font-size: 5rem;
         margin-bottom: 3vw;
     }
 
     .text-block {
         width: 100%;
-        margin-top: 3vw;
+        margin-top: 4.5vw;
     }
 
     .home-heading {
@@ -643,7 +650,7 @@ nav img {
     }
 
     .research-images-wrapper img {
-        width: 95vw;
+        width: 92.5vw;
         margin-bottom: 3vw;
     }
 
@@ -884,7 +891,7 @@ nav img {
     }
 
     .is-images-wrapper img {
-        width: 95vw;
+        width: 92.5vw;
         margin-bottom: 3vw;
     }
 
@@ -1016,12 +1023,12 @@ nav img {
 
     .landing-text p {
         /* margin-right: 190px; */
-        font-size: 1.75rem;
+        font-size: 1.65rem;
         /* background-color: cyan; */
     }
 
     .text-area {
-        font-size: 1.25rem;
+        font-size: 1.65rem;
         margin-bottom: 40px;
     }
 
@@ -1029,6 +1036,11 @@ nav img {
         /* width: 29.5vw; */
         width: 695px;
         margin-top: 40px;
+    }
+
+    .text-block li {
+        text-indent: 0;
+        padding-inline-start: 0;
     }
 
     .home-heading {
@@ -1112,13 +1124,14 @@ nav img {
         margin-bottom: 20px;
     }
 
-    /* .research-images-wrapper {
-        margin-bottom: 40px;
-    } */
+    .research-images-wrapper {
+        margin-bottom: 20px;
+    }
 
     .research-images-wrapper img {
-        height: 450px;
-        margin-bottom: 40px;
+        height: 455px;
+        margin-bottom: 20px;
+        margin-right: 20px;
     }
 
 
@@ -1359,9 +1372,14 @@ nav img {
         margin-bottom: 20px;
     }
 
+    .is-images-wrapper {
+        margin-bottom: 20px;
+    }
+
     .is-images-wrapper img {
-        height: 450px;
-        margin-bottom: 40px;
+        height: 360px;
+        margin-bottom: 20px;
+        margin-right: 20px;
     }
 
 }
