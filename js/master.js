@@ -12,18 +12,18 @@ setTimeout(delayedSetup, 500);
 function delayedSetup(){
     // Causes hamburger menu icon to toggle mobile navigation menu
     const hamMenu = document.querySelector('.ham-menu');
-    const navigation = document.querySelector('.navigation');
+    const navigation = document.querySelector('.nav-categories');
     hamMenu.addEventListener('click', () => {
         hamMenu.classList.toggle('active');
         navigation.classList.toggle('active');
     })
 
     // Adds tap functionality to each category-menu pair
-    const categoryNames = document.querySelectorAll(".category-name");
-    const categoryLists = document.querySelectorAll(".navigation ul");
+    const categoryNames = document.querySelectorAll(".nav-category-name");
+    const categoryLinks = document.querySelectorAll(".nav-categories ul");
     for(let categoryIndex = 0; categoryIndex < categoryNames.length; categoryIndex++) {
         categoryNames[categoryIndex].addEventListener('click', () => {
-            categoryLists[categoryIndex].classList.toggle('active');
+            categoryLinks[categoryIndex].classList.toggle('active');
             categoryNames[categoryIndex].classList.toggle('flipped');
         })
     }

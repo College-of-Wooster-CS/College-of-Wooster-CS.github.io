@@ -1,4 +1,12 @@
-/* ALL PAGES */
+/* Each page has three groups of styles: general, tall aspect ratio (phones, tablets), and wide aspect ratio (wide screens). To quickly
+navigate to the styles for a specific page, search (CTRL + F) the page's name followed by "styles" and then "tall" or "wide" as needed.
+You shouldn't have to type the whole thing. There are also separate sets for styles that apply to multiple pages (general styles) and
+styles for the navigation menu (nav styles). The order in which elements are listed here reflects the order in which they appear on the
+page.*/
+
+
+
+/* GENERAL STYLES */
 
 * {
     box-sizing: border-box;
@@ -23,6 +31,17 @@ a {
     color: #000;
 }
 
+.chevron {
+    display: inline-block;
+    /* border-right: 4px solid rgb(229, 21, 21); */
+    transform: rotate(45deg);
+    position: relative;
+}
+
+
+
+/* NAV STYLES */
+
 nav {
     display: flex;
     flex-direction: row;
@@ -35,64 +54,43 @@ nav img {
     height: 100%;
 }
 
-.category-name {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.chevron {
-    display: inline-block;
-    /* border-right: 4px solid rgb(229, 21, 21); */
-    transform: rotate(45deg);
-    position: relative;
-}
-
-.navigation {
+.nav-categories {
     display: flex;
     width: 100%;
     list-style: none;
 }
 
-.navigation a:hover {
+.nav-categories a:hover {
     text-decoration: underline;
 }
 
-.navigation ul {
+.nav-category-name {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-categories ul {
     display: none;
     list-style: none;
 }
 
-.bold {
-    font-weight: bold;
-}
 
 
-
-/* HOME PAGE */
+/* INDEX STYLES */
 
 .landing-wrapper {
     display: flex;
 }
 
-.landing-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.landing-text a {
-    text-decoration: underline;
-    font-weight: bold;
+#slideshow {
+    position: relative;
+    display: block;
 }
 
 .slide {
     height: 100%;
     display: none;
     background-size: cover;
-}
-
-#slideshow {
-    position: relative;
-    display: block;
 }
 
 .display-slide {
@@ -127,207 +125,53 @@ nav img {
     right: 0;
 }
 
-.text-area {
+.landing-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-text-wrapper a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.body-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.text-block {
+.body-wrapper div {
     line-height: 1.4;
     list-style-position: inside;
 }
 
-/* HOME LIST UNUSED */
 
 
+/* FACULTY & STAFF STYLES */
 
-
-/* OFFICE HOURS PAGE */
-
-.hours-text {
-    font-weight: normal;
-}
-
-.hours-text a {
-    text-decoration: underline;
-}
-
-.hours-list {
-    font-weight: bold;
-    list-style: none;
-}
-
-.hours-list a {
-    text-decoration: underline;
-}
-
-/* .hours-sublist {
-    list-style: none;
-    font-weight: normal;
-} */
-
-.zi-schedule {
-    font-weight: normal;
-    display: flex;
-}
-
-
-
-/* OPPORTUNITIES PAGE */
-
-.opportunities-text {
-    line-height: 1.5;
-}
-
-.opportunities-text a {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.opportunities-list {
-    list-style: none;
-    font-weight: bold;
-}
-
-.opportunities-list a {
-    text-decoration: underline;
-    font-weight: normal;
-}
-
-.opportunities-sublist {
-    list-style: disc;
-    list-style-position: inside;
-    font-weight: normal;
-    line-height: 1.25;
-}
-
-.research-images-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content: space-between; */
-}
-
-.research-images-wrapper img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-/* AFTER WOOSTER PAGE */
-
-.after-wooster-list {
-    /* color: red; */
-    list-style-position: inside;
-}
-    
-.after-wooster-button {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* .ater-wooster-text {
-    line-height: 1.5;
-    color: red;
-} */
-
-/* .after-wooster-text a {
-    font-weight: bold;
-    text-decoration: underline;
-} */
-
-
-
-/* RECENT EVENTS PAGE */
-
-/* .events-year {
-
-} */
-
-.event {
+.faculty-member {
     display: flex;
     justify-content: space-between;
 }
 
-.event img {
+.faculty-member img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.event-text {
+.faculty-member div {
     margin: auto 0 auto 0;
     overflow-y: auto;
 }
 
-
-
-/* LATEX PAGE */
-
-.latex-text {
-    line-height: 1.5;
-}
-
-.latex-text a {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
-
-/* ADDITIONAL LINKS PAGE */
-
-.links-text a {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.links-list {
-    list-style: none;
-    font-weight: bold;
-}
-
-.links-list a {
-    text-decoration: underline;
-    /* font-weight: bold; */
-}
-
-.links-sublist {
-    list-style: disc;
-    list-style-position: inside;
-    font-weight: normal;
-}
-
-
-
-/* FACULTY PAGE */
-
-.faculty-wrapper {
-    display: flex;
-    justify-content: space-between;
-    /* background-color: cyan; */
-}
-
-.faculty-wrapper img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* box-shadow: 10px 10px; */
-}
-
-.faculty-text {
-    margin: auto 0 auto 0;
-    overflow-y: auto;
-}
-
-.faculty-text a {
+.faculty-member div a {
     color: #000;
     text-decoration: underline;
 }
 
-/* .faculty-name {
-    font-weight: bold;
-} */
 
 
-
-/* STUDENTS PAGE */
+/* STUDENTS & ALUMNS STYLES */
 
 .year {
     font-weight: bold;
@@ -352,11 +196,20 @@ nav img {
 
 
 
-/* COURSES PAGE */
+/* AFTER WOOSTER STYLES */
 
-.course .flipped .chevron {
-    transform: rotate(-135deg);
+.after-wooster-list {
+    list-style-position: inside;
 }
+    
+.after-wooster-button {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* COURSE DESCRIPTIONS STYLES */
 
 .course {
     line-height: 1.5;
@@ -364,6 +217,10 @@ nav img {
 
 .course-name {
     cursor: pointer;
+}
+
+.course .flipped .chevron {
+    transform: rotate(-135deg);
 }
 
 .course-info {
@@ -376,28 +233,24 @@ nav img {
 
 
 
-/* IS PAGE */
+/* IS STYLES */
 
-.is-list {
+.is-categories {
     list-style: none;
-    font-weight: bold;
 }
 
-.is-list a {
+.is-categories a {
     text-decoration: underline;
-    font-weight: normal;
 }
 
-.is-sublist {
+.is-categories ul {
     list-style: disc;
     list-style-position: inside;
-    font-weight: normal;
 }
 
 .is-images-wrapper {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-between; */
 }
 
 .is-images-wrapper img {
@@ -406,14 +259,108 @@ nav img {
 
 
 
+/* DEVELOPMENT LAB / CS HELP STYLES */
+
+.help-description a {
+    text-decoration: underline;
+}
+
+.help-resources {
+    list-style: none;
+}
+
+.help-resources a {
+    text-decoration: underline;
+}
+
+.help-resources ul {
+    display: flex;
+    list-style: none;
+}
+
+
+
+/* RESEARCH & INTERNSHIPS STYLES */
+
+.research-categories {
+    list-style: none;
+}
+
+.research-categories ul {
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.25;
+}
+
+.research-categories a {
+    text-decoration: underline;
+}
+
+.research-images-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.research-images-wrapper img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* RECENT EVENTS STYLES */
+
+.event {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event div {
+    margin: auto 0 auto 0;
+    overflow-y: auto;
+}
+
+
+
+/* ADDITIONAL LINKS STYLES */
+
+.links-categories {
+    list-style: none;
+}
+
+.links-categories ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.links-categories a {
+    text-decoration: underline;
+}
+
+
+
 @media (max-aspect-ratio: 1/1) {
 
-    /* ALL PAGES TALL */
-
+    /* GENERAL STYLES TALL */
 
     html {
         font-size: 1vw;
     }
+
+    main {
+        padding: 0 3vw 0 3vw;
+    }
+
+    h1 {
+        margin-bottom: 3vw;
+    }
+
+
+
+    /* NAV STYLES TALL */
 
     nav {
         position: sticky;
@@ -423,14 +370,13 @@ nav img {
         padding: 3vw;
     }
 
-    .home {
+    .logo {
         width: 20vw;
     }
 
-    .navigation {
+    .nav-categories {
         background-color: white;
         height: 100%;
-        /* max-width: 1280px; */
         position: fixed;
         top: 0;
         right: -100vw;
@@ -442,15 +388,13 @@ nav img {
         transition: .3s ease;
         z-index: 9;
         overflow: scroll;
-        /* justify-content: center; */
-        /* align-items: center; */
     }
 
-    .navigation.active {
+    .nav-categories.active {
         right: 0;
     }
 
-    .category-name {
+    .nav-category-name {
         flex-direction: row;
         justify-content: right;
     }
@@ -464,21 +408,21 @@ nav img {
         margin-right: 3vw;
     }
 
-    .navigation .flipped .chevron {
+    .nav-categories .flipped .chevron {
         transform: rotate(-135deg);
         top: 6vw;
     }
-
-    .navigation li ul {
-        font-size: 7rem;
-    }
     
-    .navigation li{
+    .nav-categories li{
         margin-top: 3vw;
         cursor: pointer;
     }
 
-    .navigation ul.active {
+    .nav-categories ul {
+        font-size: 7rem;
+    }
+
+    .nav-categories ul.active {
         display: block;
     }
 
@@ -524,31 +468,18 @@ nav img {
         top: 50%;
         transform: translate(-50%) rotate(-45deg);
     }
-
-    main {
-        padding: 0 3vw 0 3vw;
-    }
-
-    h1 {
-        margin-bottom: 3vw;
-    }
     
 
 
-    /* HOME PAGE TALL */
+    /* INDEX STYLES TALL */
 
     .landing-wrapper {
         flex-direction: column;
-        margin-bottom: 3vw;
-    }
-
-    .landing-text p {
-        font-size: 5rem;
+        margin-top: 3vw;
     }
 
     #slideshow {
         width: 100%;
-        margin-bottom: 3vw;
         height: 60vw;
         margin-right: 3vw;
     }
@@ -561,235 +492,61 @@ nav img {
         font-size: 2.5rem;
     }
 
-    #index-heading {
+    .landing-text-wrapper {
+        margin-top: 3vw;
+    }
+
+    .landing-text-wrapper h1 {
         font-size: 10rem;
     }
 
-    .text-area {
+    .landing-text-wrapper p {
         font-size: 5rem;
-        margin-bottom: 3vw;
+        margin-top: 3vw;
     }
 
-    .text-block {
+    .body-wrapper {
+        font-size: 5rem;
+    }
+
+    .body-wrapper div {
         width: 100%;
-        margin-top: 4.5vw;
-    }
-
-    .home-heading {
-        margin-bottom: 1vw;
-    }
-
-    .home-body {
-        font-size: 4rem;
-    }
-
-
-
-    /* OFFICE HOURS PAGE TALL */
-
-    #help-heading {
-        font-size: 7rem;
-    }
-
-    .hours-text {
-        font-size: 4rem;
-        margin-top: 2vw;
-    }
-
-    .hours-list {
-        font-size: 5rem;
-        margin-bottom: 3vw;
-    }
-
-    .hours-list li {
-        margin-top: 3vw;
-    }
-
-    .zi-schedule {
-        flex-direction: column;
-        font-size: 4rem;
-        line-height: 6vw;
-    }
-
-    .zi-day {
-        margin-top: 2vw;
-    }
-
-    /* .hours-sublist li {
-        margin-top: 1.5vw;
-    } */
-
-
-
-    /* OPPORTUNITIES PAGE TALL */
-
-    #opportunities-heading {
-        font-size: 8rem;
-    }
-    
-    .opportunities-text {
-        font-size: 4rem;
-        margin-bottom: 3vw;
-    }
-    
-    .opportunities-list {
-        font-size: 5rem;
-        margin-bottom: 3vw;
-    }
-
-    .opportunities-list li {
         margin-top: 6vw;
     }
 
-    .opportunities-sublist li {
-        margin-top: 1.5vw;
-    }
-
-    .research-images-wrapper {
-        /* margin-bottom: 3vw; */
-        justify-content: center;
-    }
-
-    .research-images-wrapper img {
-        width: 92.5vw;
-        margin-bottom: 3vw;
-    }
-
-
-
-    /* AFTER WOOSTER PAGE TALL */
-
-    #after-wooster-heading {
-        font-size: 8rem;
-    }
-
-    .after-wooster-wrapper {
-        margin-bottom: 3vw;
-    }
-
-    .after-wooster-list-heading {
-        font-size: 4rem;
-        margin-bottom: 2vw;
-        margin-top: 3vw;
-    }
-    
-    .after-wooster-list {
-        font-size: 3.5rem;
-        /* margin-bottom: 3vw; */
-    }
-
-    .after-wooster-list li {
-        margin-bottom: 1vw;
-    }
-    
-    .after-wooster-button {
-        font-size: 3.5rem;
-        /* margin-bottom: 3vw; */
-    }
-
-
-
-    /* RECENT EVENTS PAGE TALL */
-    
-    #events-heading {
-        font-size: 8vw;
-    }
-    
-    .events-year {
-        font-size: 7rem;
-        margin-bottom: 1.5vw;
-    }
-    
-    .event {
-        /* margin-top: 3vw; */
-        margin-top: 1.5vw;
-        margin-bottom: 4.5vw;
-        flex-direction: column;
-    }
-
-    .event img {
-        width: 91vw;
-    }
-
-    .event-text {
-        font-size: 4rem;
-        margin-top: 1.5vw;
-        line-height: 1.25;
-
-    }
-
-
-
-    /* LATEX PAGE TALL */
-
-    #latex-heading {
-        font-size: 8rem;
-    }
-    
-    .latex-text {
-        font-size: 4rem;
-        margin-bottom: 3vw;
-    }
-
-
-
-    /* ADDITIONAL LINKS PAGE TALL */
-
-    #links-heading {
-        font-size: 9rem;
-    }
-
-    .links-text {
+    .body-wrapper h2 {
         font-size: 5rem;
-        margin-bottom: 3vw;
-        margin-top: 3vw;
-    }
-    
-    .links-list {
-        font-size: 5rem;
-        margin-bottom: 3vw;
-        margin-top: 3vw;
-    }
-
-    .links-list li {
-        /* margin-bottom: 3vw; */
-        margin-top: 6vw;
-    }
-
-    .links-sublist li {
-        margin-top: 1.5vw;
     }
 
 
 
-    /* FACULTY PAGE TALL */
+    /* FACULTY & STAFF STYLES TALL */
 
     #faculty-heading {
         font-size: 8rem;
     }
 
-    .faculty-wrapper {
+    .faculty-member {
         flex-direction: column;
-        margin-bottom: 3vw;
+        margin-top: 6vw;
     }
 
-    .faculty-wrapper img {
+    .faculty-member img {
         width: 100%;
-        margin-bottom: 5%;
     }
 
-    .faculty-text {
+    .faculty-member div {
         font-size: 4rem;
         width: 100%;
     }
 
-    /* .faculty-name {
-        font-size: 4.5rem;
-    } */
+    .faculty-member div p {
+        margin-top: 3vw;
+    }
 
 
 
-    /* STUDENTS PAGE TALL */
+    /* STUDENTS & ALUMNS STYLES TALL */
     
     #students-heading {
         font-size: 5vw;
@@ -821,15 +578,44 @@ nav img {
 
 
 
-    /* COURSES PAGE TALL */
+    /* AFTER WOOSTER STYLES TALL */
+
+    #after-wooster-heading {
+        font-size: 8rem;
+    }
+
+    .after-wooster-subheading {
+        font-size: 4rem;
+        margin-top: 3vw;
+    }
+    
+    .after-wooster-list {
+        font-size: 3.5rem;
+    }
+
+    .after-wooster-list li {
+        margin-top: 1vw;
+    }
+    
+    .after-wooster-button {
+        font-size: 3.5rem;
+        margin-top: 1vw;
+    }
+
+
+
+    /* COURSE DESCRIPTIONS STYLES TALL */
 
     #course-descriptions-heading {
         font-size: 8rem;
     }
 
     .course {
-        margin-bottom: 3vw;
         margin-top: 6vw;
+    }
+
+    .course-name {
+        font-size: 5.5rem;
     }
 
     .course .chevron {
@@ -844,13 +630,9 @@ nav img {
     .course .flipped .chevron {
         top: 0vw;
     }
-
-    .course-name {
-        font-size: 5.5rem;
-        margin-bottom: 1.5vw;
-    }
     
     .course-info {
+        margin-top: 1.5vw;
         font-size: 4rem;
     }
 
@@ -860,84 +642,210 @@ nav img {
 
 
 
-    /* IS PAGE TALL */
+    /* IS STYLES TALL */
 
     #is-heading {
         font-size: 9rem;
     }
     
-    .is-list {
+    .is-categories {
         font-size: 5rem;
-        margin-bottom: 3vw;
-        /* margin-top: 3vw; */
     }
 
-    .is-list li {
-        /* margin-bottom: 3vw; */
+    .is-categories li {
         margin-top: 6vw;
     }
 
-    /* .is-sublist {
-        margin-top: 1.5vw;
-    } */
+    .is-categories h2 {
+        font-size: 5rem;
+    }
 
-    .is-sublist li {
-        /* margin-bottom: 1.5vw; */
+    .is-categories ul li {
         margin-top: 1.5vw;
     }
 
     .is-images-wrapper {
-        /* margin-bottom: 3vw; */
         justify-content: center;
     }
 
     .is-images-wrapper img {
         width: 92.5vw;
+        margin-top: 3vw;
+    }
+
+
+
+    /* DEVELOPMENT LAB / CS HELP STYLES TALL */
+
+    #help-heading {
+        font-size: 7rem;
+    }
+
+    .help-description {
+        font-size: 4rem;
+        margin-top: 2vw;
+    }
+
+    .help-resources h2 {
+        font-size: 5rem;
+    }
+
+    .help-resources li {
+        margin-top: 3vw;
+    }
+
+    .help-resources ul {
+        flex-direction: column;
+        font-size: 4rem;
+        line-height: 6vw;
+    }
+
+    .help-resources ul li {
+        margin-top: 2vw;
+    }
+
+
+
+    /* RESEARCH & INTERNSHIPS STYLES TALL */
+
+    #research-heading {
+        font-size: 8rem;
+    }
+    
+    .research-categories {
         margin-bottom: 3vw;
+    }
+
+    .research-categories li {
+        margin-top: 6vw;
+    }
+
+    .research-categories h2{
+        font-size: 6rem;
+    }
+
+    .research-categories ul li {
+        margin-top: 1.5vw;
+        font-size: 5rem;
+    }
+
+    .research-images-wrapper {
+        justify-content: center;
+    }
+
+    .research-images-wrapper img {
+        width: 92.5vw;
+        margin-bottom: 3vw;
+    }
+
+
+
+    /* RECENT EVENTS STYLES TALL */
+    
+    #events-heading {
+        font-size: 8vw;
+    }
+    
+    .events-year {
+        font-size: 7rem;
+        margin-top: 6vw;
+    }
+    
+    .event {
+        margin-top: 6vw;
+        flex-direction: column;
+    }
+
+    .event img {
+        width: 91vw;
+    }
+
+    .event div {
+        font-size: 4rem;
+        margin-top: 3vw;
+        line-height: 1.25;
+    }
+
+    .event-description {
+        margin-top: 3vw;
+    }
+
+
+
+    /* ADDITIONAL LINKS STYLES TALL */
+
+    #links-heading {
+        font-size: 9rem;
+    }
+    
+    .links-categories {
+        font-size: 5rem;
+        margin-top: 3vw;
+    }
+
+    .links-categories li {
+        margin-top: 6vw;
+    }
+
+    .links-categories h2 {
+        font-size: 6rem;
+    }
+
+    .links-categories ul li {
+        margin-top: 1.5vw;
     }
 
 }
 
 @media (min-aspect-ratio: 1/1) {
 
-    /* ALL PAGES WIDE */
+    /* GENERAL STYLES WIDE */
 
     html {
         font-size: 15px;
         zoom: 80%;
     }
 
+    main {
+        width: 1510px;
+        padding: 0 40px 40px 40px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+
+
+    /* NAV STYLES WIDE */
+
     nav {
         padding: 40px;
         width: 1510px;
-        /* background-color: cyan; */
-        /* width: 100vw; */
         text-align: left;
         justify-content: center;
         align-items: center;
     }
 
-    .home {
+    .logo {
         height: 70px;
         margin-right: 40px;
     }
 
-    .navigation {
+    .nav-categories {
         font-size: 2rem;
         flex-flow: row wrap;
-        /* column-gap: 4vw; */
         justify-content: space-between;
-        /* background-color: green; */
         text-align: right;
     }
     
-    .navigation li {
+    .nav-categories li {
         padding: 0 20px 0 20px;
         margin: auto 0 auto 0;
         width: 220px;
     }
 
-    .category-name {
+    .nav-category-name {
         justify-content: left;
     }
 
@@ -950,21 +858,21 @@ nav img {
         margin-left: 15px;
     }
     
-    .navigation ul a {
+    .nav-categories ul a {
         display: block;
         padding: 25px 25px;
         font-size: 1.5rem;
     }
 
-    .is-link {
-        margin-right: 30px;
+    .nav-is {
+        margin-right: 70px;
     }
 
-    .navigation li:hover ul {
+    .nav-categories li:hover ul {
         display: block;
     }
     
-    .navigation ul {
+    .nav-categories ul {
         position: absolute;
         z-index: 99;
         background-color: white;
@@ -972,11 +880,10 @@ nav img {
         border-width: 2px;
         border-style:solid;
         width: initial;
-        /* background-color: red; */
         text-align: left;
     }
 
-    .navigation li ul li {
+    .nav-categories ul li {
         width: initial;
         padding: 0;
     }
@@ -985,25 +892,15 @@ nav img {
         display: none;
     }
 
-    main {
-        width: 1510px;
-        padding: 0 40px 0 40px;
-    }
-
-    h1 {
-        margin-bottom: 20px;
-    }
 
 
-
-    /* HOME PAGE WIDE */
+    /* INDEX STYLES WIDE */
 
     .landing-wrapper {
         flex-direction: row;
     }
 
     #slideshow {
-        /* width: 60%; */
         width: 860px;
         height: 560px;
         margin-right: 40px;
@@ -1013,269 +910,64 @@ nav img {
         font-size: 2rem;
     }
 
-    .landing-text {
+    .landing-text-wrapper {
         width: 530px;
-        /* width: 37%; */
     }
     
-    #index-heading {
+    .landing-text-wrapper h1 {
         font-size: 3.75rem;
     }
 
-    .landing-text p {
-        /* margin-right: 190px; */
+    .landing-text-wrapper p {
         font-size: 1.65rem;
-        /* background-color: cyan; */
+        margin-top: 20px;
     }
 
-    .text-area {
+    .body-wrapper {
         font-size: 1.65rem;
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
-    .text-block {
-        /* width: 29.5vw; */
+    .body-wrapper div {
         width: 695px;
-        margin-top: 40px;
     }
 
-    .text-block li {
-        text-indent: 0;
-        padding-inline-start: 0;
-    }
-
-    .home-heading {
-        margin-bottom: 5px;
-    }
-
-    .home-body {
-        font-size: 1.5rem;
-    }
-    
-
-
-    /* OFFICE HOURS PAGE WIDE */
-
-    #help-heading {
-        font-size: 3rem;
-    }
-    
-    .hours-text {
-        font-size: 1.5rem;
-        margin-top: 20px;
-        /* margin-bottom: 20px; */
-    }
-
-    .hours-list {
-        font-size: 2rem;
-        margin-top: 20px;
-    }
-
-    .hours-list li {
-        margin-bottom: 40px;
-        /* margin-top: 40px; */
-    }
-
-    .zi-schedule {
-        flex-direction: row;
-        font-size: 1.35rem;
-        line-height: 40px;
-        column-gap: 20px;
-        margin-top: 20px;
-    }
-
-    .zi-day {
-        width: 200px;
-    }
-
-    /* .hours-sublist li {
-        margin-top: 20px;
-        margin-bottom: 0;
-        font-size: 1.5rem;
-    } */
-
-
-
-    /* OPPORTUNITIES PAGE WIDE */
-
-    #opportunities-heading {
-        font-size: 4rem;
-    }
-    
-    .opportunities-text {
-        font-size: 1.6rem;
-        margin-bottom: 40px;
-    }
-    
-    .opportunities-list {
-        font-size: 2rem;
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-
-    .opportunities-list li {
-        margin-bottom: 40px;
-    }
-
-    .opportunities-sublist {
-        margin-top: 20px;
-    }
-
-    .opportunities-sublist li {
-        margin-bottom: 20px;
-    }
-
-    .research-images-wrapper {
-        margin-bottom: 20px;
-    }
-
-    .research-images-wrapper img {
-        height: 455px;
-        margin-bottom: 20px;
-        margin-right: 20px;
+    .body-wrapper h2 {
+        font-size: 1.65rem;
     }
 
 
 
-    /* AFTER WOOSTER PAGE WIDE */
-
-    #after-wooster-heading {
-        font-size: 4rem;
-    }
-
-    .after-wooster-wrapper {
-        margin-bottom: 40px;
-    }
-
-    .after-wooster-list-heading {
-        font-size: 2rem;
-        margin-bottom: 15px;
-        margin-top: 40px;
-    }
-    
-    .after-wooster-list {
-        font-size: 1.6rem;
-        /* margin-bottom: 40px; */
-    }
-
-    .after-wooster-list li {
-        margin-bottom: 10px;
-    }
-    
-    .after-wooster-button {
-        font-size: 1.6rem;
-        /* margin-bottom: 40px; */
-    }
-
-
-
-    /* RECENT EVENTS PAGE WIDE */
-
-    #events-heading {
-        font-size: 5rem;
-    }
-    
-    .events-year {
-        font-size: 3rem;
-        margin-bottom: 40px;
-    }
-    
-    .event {
-        margin-top: 20px;
-        flex-direction: row;
-    }
-
-    .event img {
-        width: 550px;
-        margin-right: 40px;
-    }
-
-    .event-text {
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-
-
-
-    /* LATEX PAGE WIDE */
-
-    #latex-heading {
-        font-size: 4rem;
-    }
-    
-    .latex-text {
-        font-size: 1.6rem;
-        margin-bottom: 40px;
-    }
-
-
-
-    /* ADDITIONAL LINKS PAGE WIDE */
-
-    #links-heading {
-        font-size: 3.5rem;
-    }
-
-    .links-text {
-        font-size: 2rem;
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-    
-    .links-list {
-        font-size: 2rem;
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-
-    .links-list li {
-        margin-bottom: 40px;
-    }
-
-    .links-sublist {
-        margin-top: 20px;
-    }
-
-    .links-sublist li {
-        margin-bottom: 20px;
-    }
-
-
-
-    /* FACULTY PAGE WIDE */
+    /* FACULTY & STAFF STYLES WIDE */
 
     #faculty-heading {
         font-size: 4.5rem;
     }
 
-    .faculty-wrapper {
+    .faculty-member {
         flex-direction: row;
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
-    .faculty-wrapper img {
+    .faculty-member img {
         width: 300px;
         height: 300px;
     }
 
-    .faculty-text {
+    .faculty-member div {
         font-size: 1.3rem;
-        /* overflow: auto; */
         margin-left: 40px;
-        /* background-color: red; */
-        /* width: 100%; */
         width: 1100px;
-        /* height: 100%; */
-        max-height: 240px;
+        max-height: 300px;
     }
 
-    /* .faculty-name {
-        font-size: 1.3rem;
-    } */
+    .faculty-member div p {
+        margin: 20px 0;
+    }
 
 
 
-    /* STUDENTS PAGE WIDE */
+    /* STUDENTS & ALUMNS STYLES WIDE */
 
     #students-heading {
         font-size: 5rem;
@@ -1310,15 +1002,44 @@ nav img {
 
 
 
-    /* COURSES PAGE WIDE */
+    /* AFTER WOOSTER STYLES WIDE */
+
+    #after-wooster-heading {
+        font-size: 4rem;
+    }
+
+    .after-wooster-subheading {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    
+    .after-wooster-list {
+        font-size: 1.6rem;
+    }
+
+    .after-wooster-list li {
+        margin-top: 10px;
+    }
+    
+    .after-wooster-button {
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+
+
+
+    /* COURSE DESCRIPTIONS STYLES WIDE */
 
     #course-descriptions-heading {
         font-size: 4.5rem;
     }
 
     .course {
-        /* max-width: 920px; */
-        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .course-name {
+        font-size: 2.25rem;
     }
 
     .course .chevron {
@@ -1333,14 +1054,10 @@ nav img {
     .course .flipped .chevron {
         top: 5px;
     }
-
-    .course-name {
-        font-size: 2.25rem;
-        margin-bottom: 20px;
-    }
     
     .course-info {
         font-size: 1.5rem;
+        margin-top: 20px;
     }
 
     .course-info ul {
@@ -1349,38 +1066,170 @@ nav img {
 
 
 
-    /* IS PAGE WIDE */
+    /* IS STYLES WIDE */
 
     #is-heading {
         font-size: 3.5rem;
     }
     
-    .is-list {
+    .is-categories {
         font-size: 2rem;
-        margin-bottom: 40px;
+    }
+
+    .is-categories li {
         margin-top: 40px;
     }
 
-    .is-list li {
-        margin-bottom: 40px;
+    .is-categories h2 {
+        font-size: 2rem;
     }
 
-    .is-sublist {
+    .is-categories ul li {
         margin-top: 20px;
     }
 
-    .is-sublist li {
-        margin-bottom: 20px;
-    }
-
     .is-images-wrapper {
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .is-images-wrapper img {
         height: 360px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+
+
+    /* DEVELOPMENT LAB / CS HELP STYLES WIDE */
+
+    #help-heading {
+        font-size: 3rem;
+    }
+    
+    .help-description {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .help-resources {
+        margin-top: 20px;
+    }
+
+    .help-resources h2 {
+        font-size: 2rem;
+    }
+
+    .help-resources li {
+        margin-top: 40px;
+    }
+
+    .help-resources ul {
+        flex-direction: row;
+        font-size: 1.35rem;
+        line-height: 40px;
+        column-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .help-resources ul li {
+        width: 200px;
+        margin-top: 0;
+    }
+
+
+
+    /* RESEARCH & INTERNSHIPS STYLES WIDE */
+
+    #research-heading {
+        font-size: 4rem;
+    }
+    
+    .research-categories {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .research-categories li {
+        margin-bottom: 40px;
+    }
+
+    .research-categories h2{
+        font-size: 3rem;
+    }
+
+    .research-categories ul {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .research-categories ul li {
+        margin-bottom: 20px;
+    }
+
+    .research-images-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .research-images-wrapper img {
+        height: 455px;
         margin-bottom: 20px;
         margin-right: 20px;
+    }
+
+
+
+    /* RECENT EVENTS STYLES WIDE */
+
+    #events-heading {
+        font-size: 5rem;
+    }
+    
+    .events-year {
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    
+    .event {
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    .event img {
+        width: 550px;
+        margin-right: 40px;
+    }
+
+    .event div {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .event-description {
+        margin-top: 20px;
+    }
+
+
+
+    /* ADDITIONAL LINKS STYLES WIDE */
+
+    #links-heading {
+        font-size: 3.5rem;
+    }
+    
+    .links-categories {
+        font-size: 2rem;
+    }
+
+    .links-categories li {
+        margin-top: 40px;
+    }
+
+    .links-categories h2 {
+        font-size: 2rem;
+    }
+
+    .links-categories ul li {
+        margin-top: 20px;
     }
 
 }
