@@ -292,6 +292,15 @@ nav img {
     line-height: 1.25;
 }
 
+.research-categories ul ul {
+    padding-left: 40px; 
+}
+
+.research-categories,
+.research-categories > li > ul {
+    padding-left: 0;
+}
+
 .research-categories a {
     text-decoration: underline;
 }
@@ -711,23 +720,39 @@ nav img {
     #research-heading {
         font-size: 8rem;
     }
-    
+  
+
+    /* base styling you already have */
     .research-categories {
-        margin-bottom: 3vw;
+      margin-left: 0; /* if you have a reset, start from zero */
+      padding-left: 0;
     }
 
-    .research-categories li {
-        margin-top: 6vw;
+    /* top-level items (you already had something like this) */
+    .research-categories > li {
+      margin-top: 1.5vw;
+      font-size: 5rem;
     }
 
-    .research-categories h2{
-        font-size: 6rem;
+    /* indent the first nested UL (only direct child ULs of a top-level li) */
+    .research-categories > li > ul {
+      padding-left: 2rem;      /* creates the visual indent */
+      margin-top: 0.5rem;      /* optional spacing */
+      list-style-position: outside; /* ensure marker sits outside the padding */
     }
 
-    .research-categories ul li {
-        margin-top: 1.5vw;
-        font-size: 5rem;
+    /* smaller font and tighter spacing for nested items (optional) */
+    .research-categories > li > ul li {
+      font-size: 4rem;
+      margin-top: 0.25em;
     }
+
+    /* deeper nested levels — progressively more indent */
+    .research-categories li ul ul {
+      padding-left: 1.5rem; /* additional indent for 3rd level */
+    }
+
+
 
     .research-images-wrapper {
         justify-content: center;
@@ -1233,3 +1258,4 @@ nav img {
     }
 
 }
+
