@@ -1,14 +1,22 @@
 [
     {
-        "image": "owu_competition_2022.png",
-        "caption": "OWU Programming Competition 2022"
+        "image": "ICPC_YU_2025.jpg",
+        "caption": "ACPC ICPC ECNA Programming Competition 2025"
     },
     {
-        "image": "ocwic_2023.jpg",
-        "caption": "Ohio Celebration of Women in Computing 2023"
+        "image": "Denison2025.jpg",
+        "caption": "Denison Programming Competition 2025"
     },
     {
-        "image": "acm_icpc_2023.jpg",
-        "caption": "ACM International Collegiate Programming Competition 2023"
+        "image": "OWU25.png",
+        "caption": "Ohio Wesleyan University Programming Competition 2025"
+    },
+    {
+        "image": "SIGCSE2025.jpeg",
+        "caption": "ACM SIGCSE 2025 Technical Symposium"
+    },
+    {
+        "image": "ncur2025.jpeg",
+        "caption": "National Conference for Undergraduate Research 2025"
     }
 ]
