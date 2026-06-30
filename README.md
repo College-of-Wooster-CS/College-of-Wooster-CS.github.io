@@ -1,11 +1,12 @@
-# OliverDhyanchandCOW.github.io
+# College of Wooster CS Website
+Repository for computer science program's website at The College of Wooster, as found [here](csweb.wooster.edu).
 
-## HTML formatted to fit most code on screen in Visual Studio Code with the explorer hidden (Ctrl+Shift+E)
 
-## To Update Every Semester
-
-### Tutoring Information
-
-## To update Every Year
-
-### Students
+## To update every semester
+- tutoring information / office hours
+- add recent events with photo
+  
+## To update every year
+- add new class year & graduating students
+- update student photos by request
+- update relevant documents (handbook, etc.)
